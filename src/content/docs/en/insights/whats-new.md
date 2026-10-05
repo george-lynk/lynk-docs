@@ -7,6 +7,14 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.3.0 · 5 October 2026
+
+### Improvements
+
+- The waitlist sign-up page is now in Greek.
+- The insights.lynk.gr home page now lists only the integrations supported today: Skroutz,
+  Shopflix, Shopify, OpenCart and Softone ERP.
+
 ## Version 1.2.1 · 5 October 2026
 
 ### Fixes
