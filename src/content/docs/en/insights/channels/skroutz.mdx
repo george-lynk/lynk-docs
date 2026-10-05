@@ -12,7 +12,7 @@ In this guide you set up the **secure webhook URL**: a private address, unique t
 ## Before you start
 
 - A Lynk Insights account where you are the account owner. Team members can see the status but cannot create or change the URL.
-- Access to your store's Skroutz Seller Panel.
+- Access to your store's Skroutz Merchants account (merchants.skroutz.gr). Its screens are in Greek only, so this guide quotes the Greek labels with an English translation.
 
 ## Creating the secure URL
 
@@ -28,11 +28,15 @@ In this guide you set up the **secure webhook URL**: a private address, unique t
    For your security, the full URL is shown only this once. Copy it before you close the card. If you lose it, create a new one with **Create new URL**.
    :::
 
-4. Sign in to the Skroutz Seller Panel and open **Settings** > **Webhooks**.
+4. Sign in to Skroutz Merchants and open **Υπηρεσίες** (Services) > **Skroutz Marketplace**.
 
-5. Replace the old URL with the new one and save.
+5. In the section **Σύνδεση με e-shop (προαιρετικό)** (Connect with e-shop, optional), open **Webhook παραγγελιών** (Order webhook).
 
-6. Go back to Lynk Insights and click **I have copied it**.
+6. Paste the URL into the **Webhook URL** field, replacing the old one. There is a single field for all order updates.
+
+7. Keep **Ενεργοποίηση** (Enable) ticked and click **Αποθήκευση** (Save).
+
+8. Go back to Lynk Insights and click **I have copied it**.
 
 </Steps>
 
@@ -50,7 +54,7 @@ The **Old URL** section shows the address you used before, labelled **Being reti
 
 ## Changing the URL
 
-Click **Create new URL** and confirm. The current secure URL keeps working for 72 hours, so you have time to put the new one in Skroutz. After that, only the new one works.
+Click **Create new URL** and confirm. The current secure URL keeps working for a limited time, so you have time to put the new one in Skroutz. After that, only the new one works.
 
 After the change, the label goes back to **Waiting for Skroutz** until an order arrives at the new URL. If Skroutz still sends to the previous URL, the message **Skroutz is still using your previous URL** appears with the time it stops working. Put the new URL in Skroutz before then.
 
@@ -62,9 +66,9 @@ After you revoke the URL, new orders do not reach Lynk Insights until you put th
 
 ## If something goes wrong
 
-**I closed the card without copying the URL**: click **Create new URL**. The previous one keeps working for 72 hours.
+**I closed the card without copying the URL**: click **Create new URL**. The URL Skroutz uses keeps working for a limited time, and the card shows when it stops.
 
-**The label stays at "Waiting for Skroutz"**: the label changes with the first new order. Check that you saved the new URL in the Skroutz Seller Panel, with no spaces at the start or end.
+**The label stays at "Waiting for Skroutz"**: the label changes with the first new order. Check that you saved the new URL in the **Webhook URL** field in Skroutz Merchants, with **Ενεργοποίηση** ticked, with no spaces at the start or end.
 
 **"The URL was just changed in another window"**: the URL was created at the same time from another window or device. If you do not have the new URL, create a new one.
 
