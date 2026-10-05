@@ -1,0 +1,33 @@
+---
+title: Lynk docs
+description: Guides and answers for the Lynk apps.
+template: splash
+hero:
+  title: Lynk docs
+  tagline: Step-by-step guides and answers for the Lynk apps, written for online store owners.
+  actions:
+    - text: Get started with Lynk Insights
+      link: /en/insights/
+      icon: right-arrow
+    - text: Open the app
+      link: https://insights.lynk.gr
+      icon: external
+      variant: minimal
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## Apps
+
+<CardGrid>
+	<LinkCard
+		title="Lynk Insights"
+		description="See the real profit of every order and sync orders from Skroutz, Shopflix, Shopify and OpenCart with Softone ERP."
+		href="/en/insights/"
+	/>
+	<LinkCard
+		title="Account"
+		description="Your Lynk account, subscription, security and the terms shared by all apps."
+		href="/en/account/"
+	/>
+</CardGrid>

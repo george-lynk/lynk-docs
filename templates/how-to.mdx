@@ -1,0 +1,65 @@
+---
+title: Σύνδεση του Skroutz
+description: Μία πρόταση που λέει τι θα έχετε πετύχει στο τέλος του οδηγού.
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+{/* HOW-TO: one task, one page. Title = the task, as a noun phrase, sentence case. */}
+
+{/* Goal: one or two sentences. What the reader achieves and why it matters. */}
+
+Σε αυτόν τον οδηγό συνδέετε το κατάστημά σας στο Skroutz με το Lynk Insights, ώστε οι νέες παραγγελίες να εμφανίζονται αυτόματα στη σελίδα **Παραγγελίες**.
+
+## Πριν ξεκινήσετε
+
+{/* Prerequisites: everything the reader needs before step 1. Link to the how-to that covers each one. */}
+
+- Λογαριασμό στο Lynk Insights με ρόλο **Ιδιοκτήτης**.
+- Πρόσβαση στο Skroutz Merchants.
+
+## Βήματα
+
+{/* Numbered steps. One action per step. UI labels in bold, exactly as they appear in the app.
+    Screenshot placeholder after any step where the reader has to find something on screen:
+    demo account, 1440px wide, personal data blurred. */}
+
+<Steps>
+
+1. Ανοίξτε **Ρυθμίσεις** > **Κανάλια**.
+
+   {/* ΣΤΙΓΜΙΟΤΥΠΟ: η σελίδα Κανάλια με το κουμπί Σύνδεση επισημασμένο. Αρχείο: src/assets/screenshots/insights/channels-skroutz-1.png */}
+
+2. Στην κάρτα **Skroutz**, πατήστε **Σύνδεση**.
+
+3. Επικολλήστε το κλειδί που αντιγράψατε από το Skroutz Merchants και πατήστε **Αποθήκευση**.
+
+   {/* ΣΤΙΓΜΙΟΤΥΠΟ: το παράθυρο σύνδεσης συμπληρωμένο (κλειδί θολωμένο). */}
+
+{/* MANDATORY when a step creates a fiscal document in the ERP (receipt, invoice, credit note):
+    the caution callout is the FIRST thing inside that step, before the action. Never leave it out.
+    Pattern:
+
+4. :::caution[Έκδοση παραστατικού]
+   Το βήμα αυτό εκδίδει πραγματικό παραστατικό στο Softone ERP και το διαβιβάζει στην ΑΑΔΕ. Ελέγξτε τη σειρά και τον πελάτη πριν συνεχίσετε. Ένα παραστατικό που εκδόθηκε κατά λάθος ακυρώνεται μόνο με πιστωτικό.
+   :::
+
+   Πατήστε **Έκδοση παραστατικού**.
+*/}
+
+</Steps>
+
+## Τι θα δείτε
+
+{/* "You should see": how the reader knows it worked. Concrete, visible in the app. */}
+
+Η κάρτα **Skroutz** δείχνει την ένδειξη **Συνδεδεμένο** και οι παραγγελίες των τελευταίων 30 ημερών εμφανίζονται στη σελίδα **Παραγγελίες** μέσα σε λίγα λεπτά.
+
+## Αν κάτι δεν πάει καλά
+
+{/* Troubleshooting: 2-4 most likely problems for THIS task. Exact error text in quotes.
+    Link to the full troubleshooting page for anything longer. */}
+
+**«Μη έγκυρο κλειδί»**: το κλειδί αντιγράφηκε με κενό στην αρχή ή στο τέλος. Αντιγράψτε το ξανά και επικολλήστε το.
+
+**Δεν εμφανίζονται παραγγελίες μετά από 10 λεπτά**: ελέγξτε ότι επιλέξατε το σωστό εύρος ημερομηνιών πάνω δεξιά στη σελίδα **Παραγγελίες**.
