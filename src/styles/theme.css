@@ -1,0 +1,24 @@
+/*
+ * Lynk brand colours for Starlight.
+ * Accent is Aegean blue (#2554E6), the primary colour of the Lynk apps.
+ */
+
+/* Dark theme */
+:root {
+	--sl-color-accent-low: #142456;
+	--sl-color-accent: #5b80f0;
+	--sl-color-accent-high: #c9d6fb;
+}
+
+/* Light theme (default) */
+:root[data-theme='light'] {
+	--sl-color-accent-low: #dfe6fc;
+	--sl-color-accent: #2554e6;
+	--sl-color-accent-high: #12276b;
+}
+
+/* Keep the wordmark at a comfortable size in the header. */
+.site-title img {
+	height: 1.5rem;
+	width: auto;
+}

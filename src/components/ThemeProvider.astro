@@ -1,0 +1,22 @@
+---
+/**
+ * Makes the light theme the default for first-time visitors.
+ *
+ * Starlight stores the reader's choice in localStorage under `starlight-theme`
+ * ('light', 'dark', or '' for auto). When the key has never been set, we store
+ * 'light' before Starlight's own provider runs. Choosing dark or auto in the
+ * theme picker still works and is remembered.
+ */
+import Default from '@astrojs/starlight/components/ThemeProvider.astro';
+---
+
+<script is:inline>
+	try {
+		if (localStorage.getItem('starlight-theme') === null) {
+			localStorage.setItem('starlight-theme', 'light');
+		}
+	} catch {
+		// localStorage unavailable (private mode): fall back to Starlight's default.
+	}
+</script>
+<Default />
