@@ -117,7 +117,9 @@ of the product adds one entry to both, in the same PR, before the release goes o
 release manager writes it from the release-note lines of the product's merged PRs. Copy
 `templates/whats-new-entry.md`.
 
-- **Newest first.** One entry per version, with the version and the date in the heading.
+- **Newest first.** One entry per version, with the version and the release date in the
+  heading. Greek pages write the date as dd/mm/yyyy («Έκδοση 1.1.1 · 05/10/2026»);
+  English pages write it as "5 October 2026" ("Version 1.1.1 · 5 October 2026").
 - **Sections in this order:** Νέα / New, Βελτιώσεις / Improvements, Διορθώσεις / Fixes.
   Leave out empty sections. A release with nothing user-facing gets one line saying so;
   a hotfix may be a single line.

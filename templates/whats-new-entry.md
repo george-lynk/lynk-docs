@@ -16,12 +16,14 @@ Rules (see CONTRIBUTING.md, "What's new"):
 - Sections in this order, omit any that are empty: Νέα / New, Βελτιώσεις / Improvements,
   Διορθώσεις / Fixes. A hotfix may be a single line. A release with nothing user-facing
   gets the "no changes" line instead of sections.
-- Version without the "v"; date in words. Remove this comment before committing.
+- Heading: version without the "v", then the release date. Greek pages write the date
+  as dd/mm/yyyy (05/10/2026); English pages write it as "5 October 2026".
+  Remove this comment before committing.
 -->
 
 <!-- ===== Greek: src/content/docs/<product>/whats-new.md ===== -->
 
-## Έκδοση X.Y.Z · Η Μήνας ΕΕΕΕ
+## Έκδοση X.Y.Z · ΗΗ/ΜΜ/ΕΕΕΕ
 
 ### Νέα
 

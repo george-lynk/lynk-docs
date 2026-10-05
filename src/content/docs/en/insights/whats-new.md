@@ -9,12 +9,7 @@ anything unless the note says so.
 
 ## Version 1.1.1 · 5 October 2026
 
-### Improvements
-
-- We have prepared a private Skroutz webhook address, unique to each store, so your orders
-  reach Lynk by a safer route. The screen to view and switch it on under **Settings** is
-  coming soon. Until then your current connection works as before and you don't need to
-  change anything.
+No changes that affect how you use the app.
 
 ## Version 1.1.0 · 5 October 2026
 
