@@ -1,0 +1,75 @@
+---
+title: "Skroutz"
+description: "Set up the secure webhook URL so new Skroutz orders reach Lynk Insights right away."
+sidebar:
+  order: 1
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+In this guide you set up the **secure webhook URL**: a private address, unique to your store, where Skroutz sends every new order. Orders then appear in Lynk Insights right away, with no manual sync.
+
+## Before you start
+
+- A Lynk Insights account where you are the account owner. Team members can see the status but cannot create or change the URL.
+- Access to your store's Skroutz Merchants account (merchants.skroutz.gr). Its screens are in Greek only, so this guide quotes the Greek labels with an English translation.
+
+## Creating the secure URL
+
+<Steps>
+
+1. From the menu, open **Skroutz** and the **Connection** tab.
+
+2. In the **Secure webhook URL** card, click **Create secure URL**.
+
+3. Click **Copy** to copy the URL.
+
+   :::caution[The URL is shown once]
+   For your security, the full URL is shown only this once. Copy it before you close the card. If you lose it, create a new one with **Create new URL**.
+   :::
+
+4. Sign in to Skroutz Merchants and open **Υπηρεσίες** (Services) > **Skroutz Marketplace**.
+
+5. In the section **Σύνδεση με e-shop (προαιρετικό)** (Connect with e-shop, optional), open **Webhook παραγγελιών** (Order webhook).
+
+6. Paste the URL into the **Webhook URL** field, replacing the old one. There is a single field for all order updates.
+
+7. Keep **Ενεργοποίηση** (Enable) ticked and click **Αποθήκευση** (Save).
+
+8. Go back to Lynk Insights and click **I have copied it**.
+
+</Steps>
+
+## What you should see
+
+After you create it, the card shows only a short part of the URL (for example `wh_…ab12`), never the whole URL.
+
+As soon as Skroutz sends the first order to the new URL, the label changes to **In use** and the message **Skroutz is sending orders to the secure URL** appears. Until then the label is **Waiting for Skroutz**.
+
+**Last received (current secure URL)** and **Last received (old URL)** show when the last order arrived at each URL. When orders arrive only at the secure URL, setup is complete.
+
+## The old URL
+
+The **Old URL** section shows the address you used before, labelled **Being retired**. It will stop working soon. If Skroutz still uses it, replace it with the secure URL as soon as you can.
+
+## Changing the URL
+
+Click **Create new URL** and confirm. The current secure URL keeps working for a limited time, so you have time to put the new one in Skroutz. After that, only the new one works.
+
+After the change, the label goes back to **Waiting for Skroutz** until an order arrives at the new URL. If Skroutz still sends to the previous URL, the message **Skroutz is still using your previous URL** appears with the time it stops working. Put the new URL in Skroutz before then.
+
+If the URL was shared by mistake, click **Revoke current URL now**, type the word shown and click **Revoke and create new URL**. The current URL stops working at once.
+
+:::caution
+After you revoke the URL, new orders do not reach Lynk Insights until you put the new URL in Skroutz. Do it straight away.
+:::
+
+## If something goes wrong
+
+**I closed the card without copying the URL**: click **Create new URL**. The URL Skroutz uses keeps working for a limited time, and the card shows when it stops.
+
+**The label stays at "Waiting for Skroutz"**: the label changes with the first new order. Check that you saved the new URL in the **Webhook URL** field in Skroutz Merchants, with **Ενεργοποίηση** ticked, with no spaces at the start or end.
+
+**"The URL was just changed in another window"**: the URL was created at the same time from another window or device. If you do not have the new URL, create a new one.
+
+**I cannot see the "Create secure URL" button**: only the account owner can create or change the URL.
