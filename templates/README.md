@@ -11,6 +11,7 @@ ever built or published.
 | `concept.mdx` | Explaining how something works | What, why, how, worked example in euros |
 | `reference.mdx` | Lists of fields, settings, statuses | Tables only |
 | `troubleshooting.mdx` | One error message | Exact error text, cause, fix |
+| `whats-new-entry.md` | One release on a product's What's new page (not a page of its own) | Version and date, then Νέα / New, Βελτιώσεις / Improvements, Διορθώσεις / Fixes |
 
 Rules that apply to every template are in [CONTRIBUTING.md](../CONTRIBUTING.md).
 Remove all `{/* ... */}` guidance comments before opening the PR.

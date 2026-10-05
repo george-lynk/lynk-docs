@@ -56,6 +56,11 @@ export default defineConfig({
 							icon: 'analytics',
 							items: [
 								{ slug: 'insights', label: 'Επισκόπηση', translations: { en: 'Overview' } },
+								{
+									slug: 'insights/whats-new',
+									label: 'Τι νέο υπάρχει',
+									translations: { en: "What's new" },
+								},
 								section('Ξεκινώντας', 'Getting started', 'insights/getting-started'),
 								section('Κανάλια', 'Channels', 'insights/channels'),
 								section('Softone ERP', 'Softone ERP', 'insights/softone'),

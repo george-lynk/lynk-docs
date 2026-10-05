@@ -35,6 +35,7 @@ src/content/docs/
 ├── index.mdx                 Greek home page (/)
 ├── insights/                 Lynk Insights topic, Greek (/insights/)
 │   ├── index.mdx
+│   ├── whats-new.md          What's new: one entry per release, newest first
 │   └── <section>/index.md    one folder per sidebar section
 ├── account/                  Account topic, Greek (/account/)
 └── en/                       English mirror of everything above (/en/...)
@@ -106,6 +107,31 @@ Pick one template from `templates/` per page. Do not mix types on one page.
 | Concept | `concept.mdx` | What, why, how, and a worked example in euros |
 | Reference | `reference.mdx` | Tables only |
 | Troubleshooting | `troubleshooting.mdx` | Exact error text, cause, fix |
+
+### What's new
+
+Each product has a What's new page: for Lynk Insights,
+`src/content/docs/insights/whats-new.md` («Τι νέο υπάρχει») and
+`src/content/docs/en/insights/whats-new.md` ("What's new"). Every production release
+of the product adds one entry to both, in the same PR, before the release goes out. The
+release manager writes it from the release-note lines of the product's merged PRs. Copy
+`templates/whats-new-entry.md`.
+
+- **Newest first.** One entry per version, with the version and the release date in the
+  heading. Greek pages write the date as dd/mm/yyyy («Έκδοση 1.1.1 · 05/10/2026»);
+  English pages write it as "5 October 2026" ("Version 1.1.1 · 5 October 2026").
+- **Sections in this order:** Νέα / New, Βελτιώσεις / Improvements, Διορθώσεις / Fixes.
+  Leave out empty sections. A release with nothing user-facing gets one line saying so;
+  a hotfix may be a single line.
+- **User language.** Say what changed for the store owner and where in the app, with
+  the same language rules as any page (formal plural, sentence case, UI labels in bold).
+  No file names, endpoints, issue numbers or developer jargon.
+- **Only what users notice.** No internal, CI, refactor, test, dependency or
+  infrastructure changes.
+- **No security details.** Describe a security fix by its effect for the user ("your
+  webhook address is now private"), never the vulnerability, how it could be used or what
+  was exposed. This repository is public.
+- **Say when the user has to act,** and exactly what to do.
 
 ### Screenshots
 
