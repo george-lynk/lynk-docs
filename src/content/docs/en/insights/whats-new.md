@@ -7,6 +7,15 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.2.0 · 5 October 2026
+
+### New
+
+- New **Secure webhook URL** section in Skroutz settings. Create a private URL for your
+  orders and enter it in Skroutz. The card shows when Skroutz starts sending orders to the
+  new URL.
+  **What you need to do:** follow the [Skroutz](/en/insights/channels/skroutz/) guide.
+
 ## Version 1.1.1 · 5 October 2026
 
 No changes that affect how you use the app.
