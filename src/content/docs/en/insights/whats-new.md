@@ -7,6 +7,14 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.2.1 · 5 October 2026
+
+### Fixes
+
+- Skroutz order status updates are no longer lost when many arrive at once, for example
+  when the courier picks up your parcels.
+- Security update to in-app navigation.
+
 ## Version 1.2.0 · 5 October 2026
 
 ### New
