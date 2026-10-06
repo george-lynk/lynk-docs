@@ -7,6 +7,26 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.4.2 · 6 October 2026
+
+### Improvements
+
+- **Get Help** at the bottom of the menu now opens a new email to insights@lynk.gr.
+
+### Fixes
+
+- Product costs: your dated cost history is no longer lost when you reload the page. Cost
+  changes are saved reliably, because only the products that changed are sent, and large
+  catalogs and imports are saved in full.
+- Product costs: if your costs can't be loaded or saved, the app now shows a message. If they
+  can't be loaded, changes aren't saved until you reload the page. If they can't be saved, we
+  try again with your next change.
+- Product costs: costs for products with a code (SKU) longer than 128 characters aren't saved,
+  and a message tells you so.
+- If you use the Skroutz catalog connection for market data and its credentials show as
+  missing, an earlier issue may have cleared them.
+  **What you need to do:** enter the credentials once more.
+
 ## Version 1.4.1 · 6 October 2026
 
 ### Fixes
