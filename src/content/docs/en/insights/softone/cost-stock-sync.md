@@ -31,11 +31,13 @@ The **Cost Price Sync from Softone** card brings each item's purchase price from
 
 1. On the same tab, set in **Primary price field** which Softone field holds the purchase price. Ask your Softone partner if you're not sure.
 2. Switch on the toggle in the **Cost Price Sync from Softone** card.
+
+   :::caution[Costs are replaced]
+   The sync replaces, on the **Costs** page, the cost of every product it finds in Softone with a price above zero. While cost sync is on, importing costs from a file on the **Costs** page is locked.
+   :::
+
 3. Click **Save** and then **Sync now**.
 
-:::caution[Costs are replaced]
-The sync replaces, on the **Costs** page, the cost of every product it finds in Softone with a price above zero. While cost sync is on, importing costs from a file on the **Costs** page is locked.
-:::
 
 Cost sync also runs automatically every night, at the time you set in the card.
 

@@ -77,7 +77,7 @@ The **Push all unpushed** button (with the options **Push all**, **B2B only** an
 
 ## Correcting a document
 
-Lynk doesn't delete documents in Softone. If an order document was created with the wrong details, you or your accountant correct it in Softone. If a receipt or invoice has already been issued, for example with a credit note.
+Lynk doesn't delete documents in Softone. If an order document was created with the wrong details, you or your accountant correct it in Softone. If a receipt or invoice has already been issued, it is corrected with a credit note.
 
 <!-- update when lynk-insights#177 ships -->
 :::caution[Repush]
