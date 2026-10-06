@@ -1,21 +1,27 @@
 ---
 title: "Channels"
-description: "Connecting the sales channels your orders come from."
+description: "Connecting the sales channels your orders come from, and the Integrations Hub."
 sidebar:
   label: "Overview"
   order: 0
 ---
 
-Connecting the sales channels your orders come from.
+*Describes the current version of the app.*
 
-## What this section will cover
+Channels are where you sell: your Shopify or OpenCart store and the Skroutz and Shopflix marketplaces. You see all connections in the **Integrations Hub**: in the menu, under **Integrations**, open **Hub**.
 
-- **Skroutz**: connecting your Skroutz store so that orders appear automatically.
-- **Shopflix**: connecting your Shopflix store so that orders appear automatically.
-- **Shopify**: connecting your Shopify store so that orders appear automatically.
-- **OpenCart**: connecting your OpenCart store so that orders appear automatically.
-- **Order relay**: how orders from your sales channels are passed on to your ERP automatically.
+Each card in the **Integrations Hub** shows whether the connection is **Connected** or **Not connected**. **Configure** opens the connection's page, and **Show in sidebar** shows or hides the connection in the menu.
 
-:::note
-This section is being written. Articles will be published soon.
-:::
+<!-- TODO screenshot: the Integrations Hub with connected channels. -->
+
+## Guides
+
+In the order we recommend:
+
+- [Shopify](/en/insights/channels/shopify/): connecting the store and the webhooks.
+- [Skroutz](/en/insights/channels/skroutz/): the secure webhook URL for orders.
+- [Shopflix](/en/insights/channels/shopflix/): connecting the account and the portal session for commissions.
+- [OpenCart](/en/insights/channels/opencart/): the Lynk script, sending and importing orders.
+- [Order relay](/en/insights/channels/order-relay/): marketplace orders in Shopify or OpenCart.
+
+To send each channel's orders to Softone, see [Softone ERP](/en/insights/softone/).
