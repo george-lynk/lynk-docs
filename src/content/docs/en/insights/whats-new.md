@@ -7,6 +7,13 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.3.1 · 6 October 2026
+
+### Improvements
+
+- App updates finish faster: after a new release the app is ready in about a minute
+  instead of up to half an hour.
+
 ## Version 1.3.0 · 5 October 2026
 
 ### Improvements
