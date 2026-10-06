@@ -34,7 +34,7 @@ Lynk makes up to **three** attempts in total. If all fail, the order shows **Pus
 
 ## Can a second document be created for the same order?
 
-No. Lynk sends each order once. **Repush** and **Force repush** update the order's existing document in the same environment and don't create a second one. They do change a real document in Softone, so check the order first. If the document belongs to the other environment, or the final document or ΜΑΡΚ has already been issued, Lynk sends nothing. See [Softone order log](/en/insights/softone/document-log/).
+No. Lynk sends each order once. **Repush** and **Force repush** update the order's existing document in the same environment and don't create a second one. They do change a real document in Softone, so check the order first. If the document belongs to the other environment, or the final document or ΜΑΡΚ has already been issued, Lynk sends nothing and the app shows the reason. See [Softone order log](/en/insights/softone/document-log/).
 
 ## Can I delete a document from Lynk?
 

@@ -7,6 +7,17 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.4.1 · 6 October 2026
+
+### Fixes
+
+- Softone: in the order log, when a **Push** or **Repush** is refused, a red **Not sent to
+  Softone** message now shows the reason (for example, the final document or ΜΑΡΚ has already
+  been issued, or the document belongs to the other environment) instead of saying the order
+  was re-queued. See [Softone order log](/en/insights/softone/document-log/).
+- Softone: orders created directly in OpenCart no longer show a **Push** or **Repush** button in
+  the order log. They show **Not for Softone** instead.
+
 ## Version 1.4.0 · 6 October 2026
 
 ### Improvements
