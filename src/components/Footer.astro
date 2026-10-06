@@ -1,0 +1,113 @@
+---
+/**
+ * Site footer: Starlight's default footer (edit link, last updated, previous and
+ * next page) followed by the Lynk link columns and the copyright line.
+ *
+ * Labels follow the page locale: Greek on root pages, English under /en/.
+ * Colours come from Starlight's theme tokens only (see src/styles/theme.css).
+ */
+import Default from '@astrojs/starlight/components/Footer.astro';
+
+const { lang } = Astro.locals.starlightRoute;
+const isEn = lang === 'en';
+const base = isEn ? '/en' : '';
+const year = new Date().getFullYear();
+
+type FooterLink = { label: string; href: string };
+type FooterColumn = { title: string; links: FooterLink[] };
+
+const columns: FooterColumn[] = [
+	{
+		title: isEn ? 'Products' : 'Προϊόντα',
+		links: [{ label: 'Lynk Insights', href: 'https://insights.lynk.gr' }],
+	},
+	{
+		title: isEn ? 'Company' : 'Εταιρεία',
+		links: [
+			{ label: isEn ? 'Lynk shop' : 'Κατάστημα Lynk', href: 'https://lynk.gr' },
+			{
+				label: isEn ? 'Contact' : 'Επικοινωνία',
+				href: 'https://insights.lynk.gr/contact',
+			},
+			{
+				label: isEn ? 'Privacy policy' : 'Πολιτική απορρήτου',
+				href: 'https://insights.lynk.gr/privacy',
+			},
+			// TODO: add the Terms of Service link once a terms page exists on insights.lynk.gr.
+		],
+	},
+	{
+		title: isEn ? 'Help' : 'Βοήθεια',
+		links: [
+			{ label: isEn ? "What's new" : 'Τι νέο υπάρχει', href: `${base}/insights/whats-new/` },
+			{
+				label: isEn ? 'Getting started' : 'Ξεκινώντας',
+				href: `${base}/insights/getting-started/`,
+			},
+		],
+	},
+];
+---
+
+<Default {...Astro.props}><slot /></Default>
+
+<div class="lynk-footer not-content">
+	<nav class="lynk-footer__columns" aria-label={isEn ? 'Footer' : 'Υποσέλιδο'}>
+		{
+			columns.map((column) => (
+				<div class="lynk-footer__column">
+					<p class="lynk-footer__title">{column.title}</p>
+					<ul>
+						{column.links.map((link) => (
+							<li>
+								<a href={link.href}>{link.label}</a>
+							</li>
+						))}
+					</ul>
+				</div>
+			))
+		}
+	</nav>
+	<p class="lynk-footer__copyright">© {year} Lynk</p>
+</div>
+
+<style>
+	.lynk-footer {
+		margin-top: 3rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--sl-color-hairline);
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-3);
+	}
+	.lynk-footer__columns {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+		gap: 1.5rem;
+	}
+	.lynk-footer__title {
+		margin: 0 0 0.5rem;
+		font-weight: 600;
+		color: var(--sl-color-white);
+	}
+	.lynk-footer ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.375rem;
+	}
+	.lynk-footer a {
+		color: var(--sl-color-gray-3);
+		text-decoration: none;
+	}
+	.lynk-footer a:hover,
+	.lynk-footer a:focus-visible {
+		color: var(--sl-color-text-accent);
+		text-decoration: underline;
+	}
+	.lynk-footer__copyright {
+		margin: 1.5rem 0 0;
+		font-size: var(--sl-text-xs);
+	}
+</style>

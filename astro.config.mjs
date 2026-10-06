@@ -40,6 +40,8 @@ export default defineConfig({
 			components: {
 				// Light theme by default; dark and auto stay available in the picker.
 				ThemeProvider: './src/components/ThemeProvider.astro',
+				// Default footer plus the Lynk link columns and copyright line.
+				Footer: './src/components/Footer.astro',
 			},
 			pagefind: true,
 			plugins: [
