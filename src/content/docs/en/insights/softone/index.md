@@ -19,7 +19,7 @@ Lynk sends the orders from your channels to Softone ERP. For every order it crea
 5. **You issue the final document.** You or your accountant turn the order document into a receipt or an invoice in Softone, whenever you choose. Lynk doesn't issue documents and doesn't transmit them to AADE.
 6. **PDF delivery (optional).** If you switch it on, Lynk checks Softone regularly, detects the final document and uploads the PDF to Skroutz, or emails it to the Shopify or OpenCart customer.
 
-If sending fails, Lynk retries automatically up to three times and then emails you. See [Softone order log](/en/insights/softone/document-log/).
+If sending fails, Lynk makes up to **three** attempts in total and then emails you. See [Softone order log](/en/insights/softone/document-log/).
 
 ## In this section
 

@@ -42,7 +42,7 @@ In this guide you set, for one channel, how its orders become order documents in
 9. Click **Save configuration**.
 
 10. :::caution[Documents are created automatically]
-    Once you switch it on, every new order from the channel creates an order document in the active Softone environment, with no further confirmation. Older orders from the channel that were already forwarded to Shopify or OpenCart and never sent to Softone may also be sent automatically within a few minutes. Lynk cannot delete a document. Check that the active environment is the one you want, and open the **Order Log** right afterwards.
+    Once you switch it on, every new order from the channel creates an order document in the active Softone environment, with no further confirmation. Older orders from the channel that were already forwarded to Shopify, OpenCart or a Relay destination and never sent to Softone may also be sent automatically within a few minutes. Lynk cannot delete a document. Check that the active environment is the one you want, and open the **Order Log** right afterwards.
     :::
 
     Go back to the **Configuration** tab and switch on the toggle on the channel's card.
@@ -53,7 +53,7 @@ The channel's card on the **Configuration** tab shows **Ready** when all require
 
 With the toggle on, new orders from the channel appear in the **Order Log** as **Queued** and then **Pushed**, with the Softone document number. See [Softone order log](/en/insights/softone/document-log/).
 
-Older orders that weren't forwarded to Shopify or OpenCart are not sent automatically. If needed, you send them from the **Order Log**.
+Older orders that weren't forwarded to Shopify, OpenCart or a Relay destination are not sent automatically. If needed, you send them from the **Order Log**.
 
 :::note[Shopflix and OpenCart]
 Automatic sending works as described for Shopify and Skroutz orders. For Shopflix orders, and for orders placed in your OpenCart store, automatic sending straight to Softone doesn't work in every case at the moment. Check the **Order Log** and send any missing orders with the **Push** button.

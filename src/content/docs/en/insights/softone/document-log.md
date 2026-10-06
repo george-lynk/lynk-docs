@@ -71,16 +71,18 @@ The **Push all unpushed** button (with the options **Push all**, **B2B only** an
 
 ## If sending fails
 
-- Lynk retries automatically up to **three** times.
+- Lynk makes up to **three** attempts in total.
 - If all three fail, the status becomes **Push failed** and you receive an email listing the failed orders (at most one email every 30 minutes).
 - Read the message on the order's row, fix the cause (usually a setting or an item missing in Softone) and click **Retry**. See [Softone sending errors](/en/insights/troubleshooting/softone-document-errors/).
 
 ## Correcting a document
 
-Lynk doesn't delete documents in Softone. If an order document was created with the wrong details, you have two options:
+Lynk doesn't delete documents in Softone. If an order document was created with the wrong details, you or your accountant correct it in Softone. If a receipt or invoice has already been issued, for example with a credit note.
 
-- **Repush**: sends the order again with the current settings and updates the **same** order document in Softone, without creating a new one. Use it after you've fixed the channel settings and before the final document is issued.
-- **Correct it in Softone**: if a receipt or invoice has already been issued, you or your accountant correct it in Softone, for example with a credit note.
+<!-- update when lynk-insights#177 ships -->
+:::caution[Repush]
+**Repush** creates a **new** order document in the active Softone environment, without asking. The old document stays and you or your accountant cancel it in Softone. **Force repush** does the same for every selected order.
+:::
 
 ## Cancellations and returns
 

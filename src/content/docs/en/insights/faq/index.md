@@ -14,7 +14,7 @@ No. Lynk creates an order document in Softone for every order. You or your accou
 
 ## Does Lynk send documents to AADE?
 
-No. Lynk doesn't issue or transmit documents. Transmission is done by Softone or your provider when you issue the final document.
+No. Lynk doesn't issue or transmit documents. For transmitting the final document, ask your accountant or your Softone partner.
 
 ## Do I need Softone to use Lynk?
 
@@ -30,11 +30,12 @@ Yes. Connect the **Demo** environment first, a test installation of Softone, and
 
 ## What happens if sending to Softone fails?
 
-Lynk retries up to three times. If all fail, the order shows **Push failed** in the **Order Log** and you receive an email. See [Softone sending errors](/en/insights/troubleshooting/softone-document-errors/).
+Lynk makes up to **three** attempts in total. If all fail, the order shows **Push failed** in the **Order Log** and you receive an email. See [Softone sending errors](/en/insights/troubleshooting/softone-document-errors/).
 
 ## Can a second document be created for the same order?
 
-Lynk sends each order once. **Repush** updates the same order document instead of creating a new one. See [Softone order log](/en/insights/softone/document-log/).
+<!-- update when lynk-insights#177 ships -->
+Lynk sends each order once. **Repush** and **Force repush** create a new order document, though; use them only after cancelling the previous one in Softone. See [Softone order log](/en/insights/softone/document-log/).
 
 ## Can I delete a document from Lynk?
 

@@ -23,12 +23,12 @@ In the order most stores set it up:
 
 1. **Shopify → Softone.** Every Shopify order becomes an order document in Softone, in the retail or the wholesale series, depending on whether the buyer asked for an invoice.
 2. **Marketplaces → Shopify.** Skroutz and Shopflix orders are also created in your Shopify store, so all your online orders are in one place.
-3. **Marketplaces → Softone.** Marketplace orders are also sent straight to Softone, without going through Shopify.
+3. **Marketplaces → Softone.** Skroutz orders are also sent straight to Softone, without going through Shopify. For Shopflix, see the note in [Channel settings](/en/insights/softone/channel-setup/).
 4. **Softone stock.** You see your Softone stock inside Lynk. Today this view is read-only.
 5. **Analytics.** Revenue, commissions, cost and net profit per order, channel and product.
 6. **Products.** Which products earn you money and which don't.
 
-Each part also works on its own. If you don't use Softone, you connect only your channels. If you don't have Shopify, marketplace orders go straight to Softone.
+Each part also works on its own. If you don't use Softone, you connect only your channels. If you don't have Shopify, Skroutz orders go straight to Softone.
 
 ## What it doesn't do
 

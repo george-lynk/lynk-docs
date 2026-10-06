@@ -32,14 +32,18 @@ In this guide you connect Lynk to Softone ERP. You start with the **Demo** envir
 
 5. Click **Connect Demo**. Lynk tests the connection before it saves the details.
 
-6. Under **Active environment**, make sure **Demo** is selected. This is the environment Lynk sends orders to.
+6. Under **Active environment**, click **Demo**. After the first connection the active environment stays **Live** and the card shows **Not connected** until you switch.
 
 7. Continue with [Channel settings](/en/insights/softone/channel-setup/) and test with a few orders.
 
-8. When your tests succeed, select **Live**, fill in the details of your real installation and click **Connect Live**.
+8. :::caution[Real documents in Softone]
+   Once the active environment is **Live**, every order that is sent creates an order document in your real Softone. If the active environment is already **Live**, the connection takes effect immediately. Lynk cannot delete a document; if something is sent by mistake, you correct it in Softone. First check each channel's series and customer codes for Live.
+   :::
 
-9. :::caution[Real documents in Softone]
-   Once the active environment is **Live**, every order that is sent creates an order document in your real Softone. Lynk cannot delete a document; if something is sent by mistake, you correct it in Softone. First check each channel's series and customer codes for Live.
+   When your tests succeed, select **Live**, fill in the details of your real installation and click **Connect Live**.
+
+9. :::caution[Don't switch environments again]
+   If you later switch back to **Demo** and then to **Live** again, orders since your first switch to Live show as unsent again and some may be resent automatically. Once you're on Live, don't change the active environment without contacting us first.
    :::
 
    Under **Active environment**, click **Live**.
