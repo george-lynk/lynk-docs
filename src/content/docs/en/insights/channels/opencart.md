@@ -52,7 +52,7 @@ If you also want to see orders placed in OpenCart in Lynk:
 
 2. In **Order statuses to import**, enter the status IDs you want, separated by commas. The defaults are 2 (Processing), 3 (Shipped) and 5 (Complete). You'll find the IDs in OpenCart under **Localisation** > **Order Statuses**.
 
-3. Under **Receipt vs invoice rule**, choose how Lynk decides whether an order goes for a receipt or an invoice in Softone. For the **By store ID** and **By customer group** rules, click **Fetch stores** and fill in **Invoice store IDs**, **Receipt store IDs** or **Invoice customer group IDs**. See [Receipt or invoice](/en/insights/softone/receipt-vs-invoice/).
+3. Under **Receipt vs invoice rule**, choose how Lynk decides whether an order goes for a receipt or an invoice. For the **By store ID** and **By customer group** rules, click **Fetch stores** and fill in **Invoice store IDs**, **Receipt store IDs** or **Invoice customer group IDs**. See [Receipt or invoice](/en/insights/softone/receipt-vs-invoice/).
 
 4. Save and click **Pull now** for a first import.
 
@@ -68,4 +68,4 @@ If you also want to see orders placed in OpenCart in Lynk:
 
 **No orders come in from OpenCart**: check that **Enable order pull** is on and that the orders have one of the statuses in **Order statuses to import**.
 
-**OpenCart orders aren't sent to Softone**: see the note in [Channel settings](/en/insights/softone/channel-setup/).
+**OpenCart orders aren't sent to Softone**: orders placed directly in OpenCart are not sent to Softone. Skroutz and Shopflix orders that Lynk sends to OpenCart are sent as usual.

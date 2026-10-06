@@ -7,6 +7,32 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.4.0 · 6 October 2026
+
+### Improvements
+
+- Softone: **Repush** on an order that already has a document now updates that same document
+  instead of creating a new one. Nothing is sent when the document belongs to the other
+  environment (Demo or Live), when the final document or ΜΑΡΚ has already been issued, or when
+  the document changed in the meantime. See
+  [Softone order log](/en/insights/softone/document-log/).
+- Softone: **Force repush** for two or more orders that can be re-pushed doesn't run for now, until a
+  confirmation dialog is added.
+  **What you need to do:** send the orders again one at a time from their rows.
+- Softone: orders created directly in OpenCart are not sent to Softone.
+- Softone: when the same order is already being sent, the new send waits and is retried
+  automatically. After 20 minutes it's marked as failed, with an explanation in the order log.
+
+### Fixes
+
+- Softone: the shared retail customer is no longer overwritten with a company's details when
+  an order with an invoice is sent.
+- Softone: actions in the app (for example fixing a document number, previewing or inspecting
+  costs, and manual syncs) no longer occasionally hang, and a sync no longer wrongly shows as already running. If Softone is busy, you see the message
+  "Softone is busy right now. Please try again in a minute."
+- Fixed rare, intermittent errors in work that runs in the background, such as sending to
+  Softone and syncs.
+
 ## Version 1.3.1 · 6 October 2026
 
 ### Improvements
