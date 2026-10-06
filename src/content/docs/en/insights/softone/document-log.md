@@ -57,7 +57,7 @@ In the delivery column, **Pending** means Lynk is waiting for the final document
 
 The order joins the queue and its status changes to **Queued** and then **Pushed**. If it fails, Lynk retries automatically. The counter next to **Queued** (for example 1/3) shows the attempts. To take an order out of the queue before it's sent, click the remove button next to it (**Remove from queue**).
 
-Cancelled orders have no **Push** button and are not sent. Orders created directly in OpenCart are not sent to Softone, because they have no VAT number to find the customer. Skroutz or Shopflix orders that Lynk sends to OpenCart are sent as usual.
+Cancelled orders have no **Push** button and are not sent. Orders created directly in OpenCart are not sent to Softone, because they have no VAT number to find the customer. Their row has no **Push** or **Repush** button; it shows **Not for Softone** instead. Hover over it to see why. Skroutz or Shopflix orders that Lynk sends to OpenCart are sent as usual.
 
 If the same order is already being sent, the new send waits and is retried automatically. The order's details show "Waiting since …" (UTC time). If the wait goes over **20 minutes**, the send is marked as failed and the explanation shows in the order's details. First check in Softone whether the order already has a document. If it doesn't, click **Retry**. If the order waits again, click **Get Help** and send us its code.
 
@@ -91,7 +91,7 @@ If an order already has an order document in Softone and you want to update it (
 
    On the order's row, click **Repush**. **Force repush** in the order's details does the same.
 
-Lynk **updates the same document** (same number) in Softone and doesn't create a second one. If the order doesn't have a document yet, one is created. The text in the order's details may still say a new document is created; what's described here is what happens.
+Lynk **updates the same document** (same number) in Softone and doesn't create a second one. If the order doesn't have a document yet, one is created.
 
 ### When Lynk won't send an order again
 
@@ -103,7 +103,7 @@ In these cases Lynk refuses and **sends nothing** to Softone:
 | The final document (receipt or invoice) has already been issued, or it has a ΜΑΡΚ | Correct it in Softone, with a credit note if needed |
 | The order's document changed or was cleared since the order joined the queue | Check the order and click **Repush** again |
 
-If the re-push is refused when you click the button, the app currently still shows "Re-queued", even though nothing was sent. If the order's status doesn't change, check the cases in the table. If it's refused after joining the queue, the reason shows in the order's details.
+If the send is refused when you click **Push** or **Repush**, the app shows a red **Not sent to Softone** message with the reason, for example that the final document has already been issued or that the document was created in a different Softone environment. The order doesn't join the queue. Use the table to see what to do. If it's refused after joining the queue, the reason shows in the order's details.
 
 ### Sending several orders again
 
