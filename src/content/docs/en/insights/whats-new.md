@@ -7,6 +7,24 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.5.0 · 6 October 2026
+
+### New
+
+- Alerting: a new **Test** button sends a test message to Slack, so you can check your Slack
+  Webhook URL. Only the account owner sees it.
+
+### Improvements
+
+- Alerting: only Slack incoming webhook URLs (`https://hooks.slack.com/...`) are accepted.
+- Alerting: the **Daily digest** and **Weekly report** options are hidden for now. They will
+  come with the new notifications.
+
+### Fixes
+
+- Alerting: your settings now save correctly, and the Slack Webhook URL is no longer cleared
+  when you save.
+
 ## Version 1.4.2 · 6 October 2026
 
 ### Improvements
