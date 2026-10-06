@@ -16,7 +16,7 @@ anything unless the note says so.
   environment (Demo or Live), when the final document or ΜΑΡΚ has already been issued, or when
   the document changed in the meantime. See
   [Softone order log](/en/insights/softone/document-log/).
-- Softone: **Force repush** for two or more selected orders doesn't run for now, until a
+- Softone: **Force repush** for two or more orders that can be re-pushed doesn't run for now, until a
   confirmation dialog is added.
   **What you need to do:** send the orders again one at a time from their rows.
 - Softone: orders created directly in OpenCart are not sent to Softone.
@@ -30,7 +30,6 @@ anything unless the note says so.
 - Softone: actions in the app (for example fixing a document number, previewing or inspecting
   costs, and manual syncs) no longer occasionally hang, and a sync no longer wrongly shows as already running. If Softone is busy, you see the message
   "Softone is busy right now. Please try again in a minute."
-- Softone: switching the active environment (Demo or Live) takes effect immediately.
 - Fixed rare, intermittent errors in work that runs in the background, such as sending to
   Softone and syncs.
 

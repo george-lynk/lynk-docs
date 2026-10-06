@@ -56,7 +56,7 @@ With the toggle on, new orders from the channel appear in the **Order Log** as *
 Older orders that weren't forwarded to Shopify, OpenCart or a Relay destination are not sent automatically. If needed, you send them from the **Order Log**.
 
 :::note[Shopflix and OpenCart]
-Automatic sending works as described for Shopify and Skroutz orders. For Shopflix orders, and for orders placed in your OpenCart store, automatic sending straight to Softone doesn't work in every case at the moment. Check the **Order Log** and send any missing orders with the **Push** button.
+Automatic sending works as described for Shopify and Skroutz orders. For Shopflix orders, automatic sending straight to Softone doesn't work in every case at the moment; check the **Order Log** and send any missing orders with **Push**. Orders placed directly in your OpenCart store are not sent to Softone.
 :::
 
 ## If something goes wrong
