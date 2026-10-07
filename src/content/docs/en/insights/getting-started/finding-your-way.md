@@ -32,7 +32,9 @@ On a phone, the menu opens from the button at the top left.
 
 Team members see only the pages they have permission for.
 
-Only the account owner can delete data, disconnect Skroutz, Shopflix, Shopify or Softone, switch Softone between live and demo, or delete the account.
+Only the account owner can delete data, disconnect Skroutz, Shopflix, Shopify or Softone, switch Softone between live and demo, or delete the account. The same goes for connecting or changing channel credentials, order forwarding, review-email settings and Softone channel settings.
+
+Product costs, platform costs and the Softone cost sync can be changed only by the owner and by members with the **Products** permission.
 
 ## Top bar
 
