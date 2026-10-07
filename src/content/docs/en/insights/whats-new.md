@@ -7,6 +7,21 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.7.0 · 7 October 2026
+
+### Improvements
+
+- Softone: **Cancel push** now asks you to confirm and shows how many orders are waiting in
+  the queue, because it cancels all of them.
+
+### Fixes
+
+- Softone: excluded orders, and orders whose push you cancelled, are never sent
+  automatically. They go only when you send them yourself.
+- Softone: when you switch from Demo back to Live, only the orders that were sent to Demo are
+  cleared. They aren't sent to Live automatically: check in Softone that they don't already
+  have a document, then push the ones you need by hand.
+
 ## Version 1.6.0 · 7 October 2026
 
 ### Improvements
