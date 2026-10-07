@@ -7,6 +7,32 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.9.0 · 7 October 2026
+
+### Improvements
+
+- Products: on a product's page, a cost you save with a date applies from that date. A future
+  date schedules the change. If you delete a dated cost, your margins go back to the cost that
+  applied before.
+- Skroutz: your Skroutz API token is no longer shown in **Settings**, but Skroutz stays
+  connected. Fill in the field only if you want to set a new token.
+
+### Fixes
+
+- Profit and margin for past periods now use the cost that applied on each day. A cost you set
+  later no longer changes older sales, so totals for past periods may differ slightly from
+  before.
+- Comparisons with the previous period no longer include rejected and expired orders.
+- The monthly margin chart now includes Shopify card fees.
+
+### Security
+
+- Only the account owner can now delete data, disconnect Skroutz, Shopflix, Shopify or
+  Softone, switch Softone between **Live** and **Demo**, or delete the account.
+- API tokens have been reset. If you use the Lynk Chrome extension or your own tool, copy your
+  new token once from **Settings** > **API Access**. Each team member now has their own token.
+- Your customers' contact details are no longer loaded into the browser with your orders.
+
 ## Version 1.7.0 · 7 October 2026
 
 ### Improvements

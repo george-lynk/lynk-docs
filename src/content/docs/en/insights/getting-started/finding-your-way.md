@@ -32,6 +32,8 @@ On a phone, the menu opens from the button at the top left.
 
 Team members see only the pages they have permission for.
 
+Only the account owner can delete data, disconnect Skroutz, Shopflix, Shopify or Softone, switch Softone between live and demo, or delete the account.
+
 ## Top bar
 
 | Item | What it does |
