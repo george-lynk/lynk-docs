@@ -7,6 +7,30 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.10.0 · 7 October 2026
+
+### Fixes
+
+- Shopify: when you reconnect Shopify, your **Webhook secret** and the **Enable inbound webhook**
+  setting are kept.
+
+### Security
+
+- Shopify: Lynk now accepts a Shopify order only when Shopify's signature checks out. **If you
+  haven't set a webhook secret, add it now:** paste it into the **Webhook secret (optional)**
+  field on Lynk's **Shopify** page (**Connection** > **Advanced settings**) and click **Save**.
+  - If you created the webhooks in Shopify, the secret is the signing key under **Settings** >
+    **Notifications** > **Webhooks**.
+  - If your Custom App creates the webhooks, the secret is the app's **API secret key**, under
+    **Settings** > **Apps** > your app > **API credentials**.
+- Shopify: until you add the secret, new Shopify orders are held. They aren't sent to Softone
+  and show a **Held** badge in the Softone **Order Log**. Check each one in Shopify, then push it
+  by hand. See [Shopify](/en/insights/channels/shopify/).
+- Only the account owner can now connect or change channel credentials, order forwarding,
+  review-email settings and Softone channel settings.
+- Product costs, platform costs and the Softone cost sync can now be changed only by the account
+  owner and team members with the **Products** permission.
+
 ## Version 1.9.0 · 7 October 2026
 
 ### Improvements
