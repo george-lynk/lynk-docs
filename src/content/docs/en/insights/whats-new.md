@@ -7,6 +7,14 @@ The changes in Lynk Insights that matter to you, newest first. Each version is s
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
+## Version 1.6.0 · 7 October 2026
+
+### Improvements
+
+- Your theme (light or dark), language and hidden menu pages are now saved to your account,
+  so they follow you to every device. Each team member has their own settings. After the
+  update, we keep the settings from the first device you open the app on.
+
 ## Version 1.5.0 · 6 October 2026
 
 ### New
