@@ -40,6 +40,8 @@ Team members see only the pages they have permission for.
 | **Light Mode** / **Dark Mode** | Switches the app theme |
 | **Switch to English** / **Αλλαγή σε Ελληνικά** | Switches the app language |
 
+Your theme, language and the pages you hid from the menu are saved to your account. You get the same choices on every computer and phone you sign in on. Each team member has their own.
+
 ## User menu
 
 Opens from your name at the bottom of the menu.
