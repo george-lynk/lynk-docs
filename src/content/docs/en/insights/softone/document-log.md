@@ -31,7 +31,7 @@ Open **Softone** and the **Order Log** tab. The cards at the top count orders by
 | **Push failed** | Orders that failed |
 | **Awaiting doc** | Orders waiting for the final document to be issued |
 | **Delivery failed** | Orders where the PDF delivery failed |
-| **Excluded** | Orders you excluded from bulk sending |
+| **Excluded** | Orders you excluded from Softone. They are never sent automatically |
 
 ## What each sending status means
 
@@ -70,6 +70,14 @@ If the same order is already being sent, the new send waits and is retried autom
    Select the orders with the checkboxes on the left and click **Push selected**. Up to 50 orders are sent at a time.
 
 The **Push all unpushed** button (with the options **Push all**, **B2B only** and **B2C only**) queues **all** orders that haven't been sent, including older ones. Sending starts immediately, with no confirmation. Use it only if you're sure all those orders need a document. To keep an order out of bulk sending, click the exclude button on its row (**Exclude from bulk push**). To bring it back, click **Re-include**.
+
+## Orders that are never sent automatically
+
+Lynk never sends these orders to Softone on its own. They go only when you send them yourself:
+
+- **Excluded orders.** An excluded order isn't sent, automatically or one by one. To send it, click **Re-include** first, then **Push**.
+- **Orders whose sending you cancelled.** **Cancel push** stops **every** order waiting in the queue, not just one. Lynk first asks you to confirm and shows how many orders that is. None of those orders is sent automatically afterwards, and Lynk doesn't put them back in the queue. The same applies to an order you remove from the queue. Their details say **Push cancelled**. To send one, click **Push** or **Retry** on it.
+- **Orders sent to Demo, after you switch back to Live.** When you switch the active environment back to **Live**, Lynk clears the Demo documents of the orders from your Live start date onwards. Only orders that were sent to **Demo** are cleared. Orders that already have a Live document keep it. The cleared orders wait for you, and their details say **Waiting for a manual push**. Before you push one, check in Softone that it doesn't already have a Live document. Then click **Push** on each order you want to send to Live.
 
 ## If sending fails
 
