@@ -117,7 +117,7 @@ Lynk writes nothing to Softone. Marking an entry only closes it in **“Needs yo
 
 To open it again, click **Open again**. It shows in **“Needs you”** again.
 
-You can close several at once from **Orders**, from the topic that groups them. For two or more, Lynk asks you to type how many there are.
+You can close several at once from **Orders**, from the topic that groups them.
 
 Entries you had already marked resolved before this feature show as closed, labelled **Marked resolved before this feature**.
 
