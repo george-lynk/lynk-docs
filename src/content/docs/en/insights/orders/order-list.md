@@ -46,6 +46,8 @@ The **Orders** page shows all orders in the date range you pick in the top bar, 
 
 Orders that don't count in revenue are **excluded orders**. You see them in the **Excluded Orders**, **Revenue Lost** and **Avg Excluded Order** cards at the top of the page.
 
+If an order with a document in Softone is cancelled or returned, in the new version of the app its page shows the **Credit notes** section: what is needed in Softone and for how much. See [Credit notes for cancellations and returns](/en/insights/softone/credit-notes/).
+
 ## Profitability
 
 | Label | What it means |
