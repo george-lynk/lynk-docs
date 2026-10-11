@@ -28,3 +28,4 @@ If sending fails, Lynk makes up to **three** attempts in total and then emails y
 - [Receipt or invoice](/en/insights/softone/receipt-vs-invoice/): how Lynk decides and what happens with the VAT number.
 - [Softone order log](/en/insights/softone/document-log/): the status of every order, failures and retries.
 - [Cost and stock from Softone](/en/insights/softone/cost-stock-sync/): item catalog, cost and stock.
+- [Credit notes for cancellations and returns](/en/insights/softone/credit-notes/): when a credit note or a void is needed in Softone, and how you mark it done.

@@ -28,3 +28,4 @@ sidebar:
 - [Απόδειξη ή τιμολόγιο](/insights/softone/receipt-vs-invoice/): πώς αποφασίζει το Lynk και τι γίνεται με το ΑΦΜ.
 - [Αρχείο παραγγελιών Softone](/insights/softone/document-log/): η κατάσταση κάθε παραγγελίας, αποτυχίες και επαναλήψεις.
 - [Κόστος και απόθεμα από το Softone](/insights/softone/cost-stock-sync/): κατάλογος ειδών, κόστος και απόθεμα.
+- [Πιστωτικά για ακυρώσεις και επιστροφές](/insights/softone/credit-notes/): πότε χρειάζεται πιστωτικό ή ακύρωση στο Softone και πώς το σημειώνετε ως έγινε.

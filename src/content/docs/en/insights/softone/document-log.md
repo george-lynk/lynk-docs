@@ -123,6 +123,8 @@ If the send is refused when you click **Push** or **Repush**, the app shows a re
 
 When an order that was already sent to Softone is cancelled or returned on the channel, Lynk emails you. Lynk doesn't change the document in Softone. Let your accountant know so they can make the necessary entries.
 
+In the new version of the app, Lynk shows each cancellation and return that needs a credit note or a void in Softone, with the amounts, and keeps it open until you mark it done. The notification is called **Credit note needed**. See [Credit notes for cancellations and returns](/en/insights/softone/credit-notes/).
+
 ## If something goes wrong
 
 **A new order doesn't appear in the log**: check that it appears on the **Orders** page. If it doesn't, see [Orders aren't arriving](/en/insights/troubleshooting/orders-not-arriving/).

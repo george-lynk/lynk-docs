@@ -44,6 +44,8 @@ No. A document created by mistake is corrected in Softone by you or your account
 
 Lynk emails you. It doesn't change the document in Softone; let your accountant know. See [Softone order log](/en/insights/softone/document-log/).
 
+Lynk never issues a credit note. In the new version of the app, it shows you which document needs a credit note or a void and for how much, with the **Credit note needed** notification. See [Credit notes for cancellations and returns](/en/insights/softone/credit-notes/).
+
 ## Does Lynk update stock in Softone or on my channels?
 
 No. Today Lynk reads stock from Softone and shows it, but it doesn't change it in Softone and doesn't send it to your channels. See [Cost and stock from Softone](/en/insights/softone/cost-stock-sync/).
