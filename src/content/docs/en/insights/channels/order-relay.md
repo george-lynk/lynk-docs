@@ -9,8 +9,10 @@ sidebar:
 
 With relay, every new Skroutz or Shopflix order is also created in your Shopify or OpenCart store. All your online orders are then in one place, and your Shopify stock goes down with every marketplace sale. In OpenCart, stock goes down if you've switched on **Deduct stock on push**.
 
-:::caution[On by default]
-As soon as you connect Shopify or OpenCart, relay is **on** for all new Skroutz and Shopflix orders. Every order creates a real order in your store. If you don't want that, switch it off as described below before new orders arrive.
+:::note[Off until you switch it on]
+Connecting Shopify or OpenCart does **not** switch relay on. You switch it on yourself, separately for each marketplace and each store. From then on only **new** orders are relayed. Past orders are never sent.
+
+If relay was already working on your account, it keeps working as before.
 :::
 
 ## Before you start
@@ -27,7 +29,7 @@ As soon as you connect Shopify or OpenCart, relay is **on** for all new Skroutz 
 
    <!-- TODO screenshot: the Order Relay card. -->
 
-3. Switch **Relay to Shopify** on or off (and, if you have OpenCart, **Relay to OpenCart**).
+3. Switch **Relay to Shopify** on or off (and, if you have OpenCart, **Relay to OpenCart**). When you switch one on, a confirmation tells you that relay applies to new orders only, from the moment you click **Save**.
 
 4. Under **Order type**, choose which orders are relayed: **All orders**, **B2C only** (retail only) or **B2B only** (invoice orders only).
 
@@ -36,6 +38,8 @@ As soon as you connect Shopify or OpenCart, relay is **on** for all new Skroutz 
 Repeat the steps for the other marketplace. Each marketplace has its own settings.
 
 ## Duplicates and Softone
+
+When relay is off and Softone is set up for the marketplace, its orders go straight to Softone, with the Skroutz or Shopflix Softone settings.
 
 Lynk recognises the orders it created in Shopify itself. When Shopify sends them back by webhook, Lynk ignores them, so they don't appear as new Shopify orders and aren't sent to Softone a second time. The order is sent to Softone once, as a marketplace order, with the Skroutz or Shopflix Softone settings.
 
