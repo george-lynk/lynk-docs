@@ -103,7 +103,7 @@ Opens from your initial at the top right. Among its items are three display opti
 | **Dark menu** | Makes the side menu and the top bar dark. The page stays light |
 | **Less motion** | Fewer motion effects on screen |
 
-The menu's width and colour are saved on this computer: on another computer you start again with the collapsed, light menu.
+The menu's width and colour are saved to your account. You get the same choices on every computer you sign in on. Each team member has their own.
 
 ### On a phone
 
