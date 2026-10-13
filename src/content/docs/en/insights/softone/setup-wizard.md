@@ -86,8 +86,28 @@ Choose the series for invoices. Three boxes follow it:
 
 ### How consumers go into Softone
 
-- **One shared retail customer**: the guide looks for the retail customer in Softone (for example "ΠΕΛΑΤΗΣ ΛΙΑΝΙΚΗΣ") and suggests it. You can search by name or type the code. With **Separate Greece and abroad** you set two customers.
-- **One customer per buyer**: you set how new customers are numbered.
+For each channel, you choose whether consumers become customers in Softone one by one, or all go to one retail customer:
+
+- **A new customer per buyer**: each buyer becomes a customer in Softone, with a code from the pattern you set (for example `B2C{αύξων:4}` from 1 gives B2C0001). The guide shows the next code.
+- **One shared retail customer**: every order goes to one customer that already exists in Softone (for example "ΠΕΛΑΤΗΣ ΛΙΑΝΙΚΗΣ"). The guide looks for it and suggests it; you can search by name or type the code.
+
+<a id="greece-abroad"></a>
+
+**Greece and abroad separately.** If you switch on **Separate Greece and abroad**, you set the approach, the retail customer and the numbering separately, by the shipping country. For example: a new customer for each buyer in Greece, and one retail customer for everyone abroad.
+
+<a id="default-customer"></a>
+
+**Default customer (and fallback).** With "A new customer per buyer", each segment's retail customer is also the fallback: if Softone doesn't accept the new customer, or the search for an existing one fails, the order goes to it instead of stopping. You see it under **Needs you** ("went to the walk-in customer"), with the orders and the reason. Once you've fixed the cause, send them again: Lynk tries the buyer again and, if that works, updates the same document with the right customer. If you don't set a default customer, such an order isn't sent, and the guide points this out.
+
+<a id="duplicate-check"></a>
+
+**Duplicate customer check.** Before creating a new customer, Lynk can look in Softone for a buyer with the same email or phone and use it. It can also fill in only what the customer record lacks, never changing what's there. The **Country code for phone numbers** (default +30) is used only here: a phone number without a country code, for example 6941234567, is read as +306941234567, so it matches the same number in Softone.
+
+<a id="consumer-category"></a>
+
+**Category of new consumers.** The customers Lynk creates go into one category (TRDCATEGORY, default 3099), and the duplicate check looks only in it, so a consumer is never mixed up with a business. If your accountant splits consumers by region, switch on **A different category per region** and choose a category for Greece, another EU country and outside the EU. Where you don't choose one, the single category applies.
+
+The VAT number written on consumers (default `000000000`) isn't a question in the guide: your partner changes it under **For Softone partners** in the channel's rules.
 
 <a id="new-customer-codes"></a>
 
@@ -130,6 +150,8 @@ If a question says the Softone lists or a customer haven't been checked recently
 ## Copying rules from another channel
 
 When a channel has no rules yet and another channel is ready, the guide suggests starting from its rules. You see what changes first, confirm, and you can undo it. Settings that concern one channel only (FBS, Shopify, Shopify invoices) aren't copied.
+
+The copy happens once. After that, each channel has its own rules, and a change to one channel doesn't change the others. For example, you can create a customer for each e-shop buyer and send Skroutz buyers to one retail customer.
 
 ## Preview
 
