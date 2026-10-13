@@ -100,3 +100,51 @@ Older orders are not sent to Softone automatically. Note, however, that the **Pu
 **Orders with a Held badge**: the webhook secret is missing. Add it, then push the held orders by hand after checking them in Shopify. See **Held orders**.
 
 **A permission is missing**: add it to the Custom App in Shopify and regenerate the app's access token.
+
+## In the new version: order history and order sources
+
+*Describes the new version of the app, coming soon.*
+
+### Order history
+
+As soon as you connect Shopify, Lynk brings in the orders of the **last 60 days** in the background. The analytics, the profit margins and the SKU report have data from day one. You can follow the progress in the **Shopify** step of the setup wizard and in **Connections** > **Shopify** > **Settings**, on the **Order history** card.
+
+:::note[History is never sent to Softone]
+History orders count in the analytics only. They are never sent to Softone (not even by hand), send no email to customers, reserve no stock and create no notifications.
+:::
+
+On the **Order history** card:
+
+- The status shows the period imported, and how many orders were new, updated, or already there.
+- **Import history (60 days)** brings in the last 60 days again. It never creates duplicate orders and never changes orders that already came in live from Shopify.
+- Under **A longer period**, choose **6 months**, **12 months** or **All history**.
+
+For more than 60 days Shopify asks for the `read_all_orders` permission. Add it to your Shopify app's permissions and reconnect Shopify to approve it. Until then the card explains what is missing.
+
+Only the account owner can start an import or choose a longer period.
+
+### Order sources
+
+Some stores also receive marketplace orders (Skroutz, Shopflix) in Shopify, from Lynk or from another app. These must not count as e-shop orders, and the Shopify flow must not send them to Softone, because the marketplace's flow already does.
+
+The **Order sources** card shows where your Shopify orders come from (the sales channel or app that created them) and how many there are:
+
+- Orders Lynk relayed itself are recognised automatically, with no question.
+- Shopify's own channels (the online store, POS, draft orders) count automatically as **Shopify e-shop**.
+- For any other source, choose in the **It is** column: **Shopify e-shop**, **Skroutz**, **Shopflix**, **Other marketplace** or **Ignore**.
+- Under **Rules** you can classify orders by tag, note attribute, the start of the order number, the email's domain or the payment method. The first rule that matches decides. Click **Add a rule**, then **Save**.
+
+After **Save**, Lynk sorts every Shopify order it already has again, with nothing else for you to do.
+
+What each label means:
+
+| Label | In the analytics | Sent to Softone by the Shopify flow |
+|---|---|---|
+| **Shopify e-shop** | Counts as Shopify | Sent as usual |
+| **Skroutz**, **Shopflix**, **Other marketplace** | Doesn't count as Shopify | Never sent |
+| **Ignore** | Doesn't count | Never sent |
+| **Unclassified** | Doesn't count until you label it | Sent as usual |
+
+:::tip[A tag for marketplace orders]
+If another app brings marketplace orders into Shopify, give them a tag (for example `skroutz`) and add a tag rule. It's not required: the source is enough.
+:::
