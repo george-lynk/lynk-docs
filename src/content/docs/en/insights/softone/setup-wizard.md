@@ -27,29 +27,60 @@ If Softone doesn't allow the company for the user, you see "The user signed in, 
 
 ## The rules questions
 
-The questions open one at a time, for each channel. Where Lynk finds only one matching choice in your lists, it suggests it; the suggestion is saved only when you select **Next question**. Each question also has **Advanced**, with the settings Lynk already uses.
+The questions open one at a time, for each channel. Where Lynk finds only one matching choice in your lists, it suggests it; the suggestion is saved only when you select **Next question**. If a question already has a saved answer, you see it marked **Saved**; a new choice applies only after you select **Next question**. Each question also has **Advanced**, with the settings Lynk already uses.
+
+<a id="softone-field"></a>
+
+### Softone codes and fields
+
+Every choice from Softone shows its code, its short name and its description, for example `7021 · ΠΑΡ · Παραγγελία (Δα-Τιμ.)`, so you can be sure you pick the right record. In long lists you can search by code or name.
+
+Under each answer, **Field in Softone** shows where Lynk writes it, for example `SALDOC · SERIES` for the invoice series. It's useful for your Softone partner.
 
 <a id="invoice-request"></a>
 
 ### How your customers ask for an invoice (Shopify)
 
-Shopify doesn't say by itself which order wants an invoice. Choose where the customer writes it:
+Shopify doesn't say by itself which order wants an invoice. Choose how Lynk can tell:
 
-- **From a checkout field**, for example "Τιμολόγιο: Ναι", and the fields with the VAT number (ΑΦΜ), the company name, the tax office (ΔΟΥ) and the business activity. The guide suggests the field names it found in your recent orders.
-- **From an order tag**, for example `needs:invoice`.
-- **When the address has a company name**. The VAT number is missing, so the order is flagged for your accountant.
+<a id="lynk-app"></a>
+
+- **With the Lynk app** (suggested): the Lynk app's invoice fields in the cart, with the VAT number checked at AADE or VIES, on every Shopify plan. If your recent orders already carry these fields, the choice is ready and there's nothing else to set up. Otherwise, in Shopify open **Online Store → Themes → Customize** and switch on the Lynk app's invoice fields, under **App embeds** or as a block in the cart.
+- **From another app's tag or field**: another invoicing app tags the order, for example `needs:invoice`, and writes the VAT number (ΑΦΜ), company name, tax office (ΔΟΥ) and business activity in its fields. The guide suggests the names it found in your recent orders.
+- **From Shopify's VAT number field** (coming soon): it doesn't mean an invoice by itself, it only appears once an address and postcode are entered, and Shopify keeps it on the customer, not the order. That's why Lynk doesn't read it yet.
+- **From a checkout field**: only for Shopify Plus stores, which can add checkout fields, for example "Τιμολόγιο: Ναι" and "ΑΦΜ". It also works for a field another app writes on the order.
+- **When the address has a company name**: the VAT number is missing, so the order is flagged for your accountant. In **What we write in the remarks when an invoice was asked for without a VAT number** you set the text that goes first in the document's remarks; left empty, it's `[INCOMPLETE B2B - VAT REQUIRED]`. If the company name is missing too, the order goes to the [safety-net customer](#safety-net-customer).
 
 The setting applies to new orders.
 
 <a id="retail-document"></a>
 
-### Which document you issue to consumers
+### Which Softone view consumers' orders go to
 
-The **retail receipt** is suggested: the order goes in with a retail series and becomes a receipt in one click in Softone. The guide shows only the series that fit the document you chose, when Softone gives their type.
+- **With every other document (Sales Documents, SALDOC)**: everything in one view, with invoices and credit notes. An order can still become an invoice later.
+- **Separately, under Retail Sales (RETAILDOC)**: retail stays separate. A document here can't become an invoice later; if the customer asks for one, it takes a credit note and a new invoice.
 
-### What happens when an invoice is asked for
+Neither is preselected: choose what your accounting team uses. The series list shows only the series that fit the view you chose, and each series says whether it's an **order** (you convert it to a receipt in Softone, and Lynk finds the final document through [Final documents](#final-documents)) or a **final document**.
 
-Choose the series for invoices. With the **VAT number look-up**, Lynk finds the business in Softone instead of creating a new one.
+The **Softone form** is no longer in this question: your partner finds it under **For Softone partners** in the channel's rules. Fill it in only if your partner built your own document form.
+
+<a id="invoice-rules"></a>
+
+### What happens when the customer asks for an invoice
+
+Choose the series for invoices. Three boxes follow it:
+
+<a id="aade"></a>
+
+- **The VAT number check at AADE**: the company's name, tax office and address come from the official registry, not from what the customer typed, and Lynk finds the business in Softone instead of creating a new one. If AADE doesn't answer, the order is sent **at once** with the customer's own details, marked "unverified", and we let you know by email and notification: "The VAT details weren't verified because of a connection problem with AADE". If you'd rather hold such orders, change it in the channel's rules.
+
+<a id="vat-prefix"></a>
+
+- **How your accountant wants the VAT number in Softone**: with the country prefix (`EL047465549`) or without it (`047465549`). Write it as in the customers you already have: that's how existing customers are found, reports add up and it matches AADE.
+
+<a id="safety-net-customer"></a>
+
+- **A safety net for invoices** (Shopify, optional): if we can't find or create the customer (for example the VAT number is missing or wrong), the invoice goes to this customer so the order doesn't stop; your accountant corrects it later.
 
 <a id="walk-in"></a>
 
@@ -81,6 +112,18 @@ Every Softone installation has its own VAT codes. For each rate in your orders, 
 ### Order with Shopify (Skroutz, Shopflix)
 
 When a marketplace's orders also go to Shopify, Lynk is suggested to **wait for the Shopify number**. The Softone document then has both numbers: the marketplace number in the customer document field and the Shopify number in the remarks, or next to the marketplace number. You find the document by either one.
+
+<a id="which-orders"></a>
+
+### Which orders are sent
+
+The last question of every channel: **All** (receipts and invoices), **Only those asking for an invoice** or **Consumers only**. It applies to the whole channel.
+
+<a id="check-now"></a>
+
+### When something hasn't been checked yet
+
+If a question says the Softone lists or a customer haven't been checked recently, select **Check now** next to the message. The customer is checked by its code, and meanwhile you see "checking". A customer you picked from the search is already checked; a code you typed is checked by Lynk as soon as you select **Next question**.
 
 <a id="copy-rules"></a>
 
