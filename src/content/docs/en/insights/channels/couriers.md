@@ -13,8 +13,6 @@ Connect your business's ACS or BOX NOW account to Lynk Insights. Once connected,
 - whether the recipient refused the parcel or it wasn't delivered, with the reason the courier gives;
 - for cash on delivery: whether it was collected from the customer and whether it was paid out to you.
 
-The connection comes first. Tracking parcels on your orders arrives in a later version.
-
 :::note[Only your e-shop's orders]
 Tracking covers your e-shop's orders (Shopify). Skroutz and Shopflix orders aren't tracked: the marketplace itself shows their delivery, and the marketplace pays you their cash on delivery.
 :::
@@ -55,26 +53,56 @@ Ask BOX NOW support for Partner API keys. BOX NOW gives you:
 
 ## Connecting
 
-1. From the menu, open **Connections** and choose **ACS** or **BOX NOW**.
-2. Fill in the details the courier gave you and save.
-3. Press **Test connection**. Lynk makes one read from the courier and shows you the result within a few seconds.
+1. From the menu, open **Connections**. In the **Couriers** group, choose **ACS** or **BOX NOW**.
+2. Fill in the details the courier gave you. For BOX NOW, under **API address** choose **Testing (stage)** or **Live (production)**, as BOX NOW told you.
+3. Press **Save**.
+4. Press **Test connection**. Lynk makes one read from the courier, in the background, and shows you the result within a few seconds.
 
-Passwords and keys are stored encrypted and are never shown again. The form only shows that they are saved. To change one, type the new value; fields you leave empty keep the saved value.
+If you change details and press **Test connection** before saving them, the test uses what you typed, without saving it.
+
+Passwords and keys are stored encrypted and are never shown again. Each field in the form only says "saved". To change one, type the new value; fields you leave empty keep the saved value.
+
+Only the account owner sees and changes the connection details.
 
 ## If the test fails
 
-| Message | What it means | What to do |
-|---|---|---|
-| Credentials not accepted | BOX NOW didn't accept the Client ID or the Client secret | Check them, and that they match the API URL (stage or production) |
-| Account disabled | BOX NOW has disabled the account | Contact BOX NOW |
-| Wrong key or address not on the list | ACS didn't accept the API key, or the account has IP locking and Lynk isn't on the list | Check the API key; ask ACS whether the account has IP locking |
-| The courier answered with an error | ACS didn't accept the company or user credentials, or the key has no rights on the call | Check the credentials; ask ACS for the rights listed above |
-| The courier isn't answering | The courier didn't answer in time | Try again in a few minutes |
+The card says **The test failed** with the reason below it, and a reference for support.
+
+| What it says | What to do |
+|---|---|
+| BOX NOW didn't accept the Client ID or the Client secret | Check them, and that they match the API address (testing or live) |
+| BOX NOW has disabled the account | Contact BOX NOW |
+| ACS didn't accept the API key, or the account has IP locking | Check the API key; ask ACS whether the account has IP locking |
+| ACS answered with an error | Check the company and user credentials; ask ACS for the rights listed above |
+| The courier didn't answer in time | Try again in a few minutes |
+
+## On your orders
+
+On every e-shop order with a shipment, under its number, you see:
+
+- the parcel's status: **On its way**, **In the locker**, **Delivered to customer**, **Delayed**, **Refused by recipient**, **Not delivered**, **Being returned** or **Returned**. When the courier gives a reason, it shows next to it, for example "Not delivered: Not at home".
+- for cash on delivery: **COD pending**, **Collected**, **Paid out**, or **Not paid out yet** when a payout is late.
+
+In the list's filters, **Shipment** and **Cash on delivery** show only the orders in one state, for example the returned ones or the ones not paid out to you yet.
+
+When you open an order, the **Shipment** section shows the courier, the tracking number (press it to copy it), the cash on delivery with its amount and when it was paid out, and every checkpoint with its time.
+
+## Shipments without an order
+
+Lynk links a shipment to its order on its own when the courier has the order number, or when the tracking number is on the Shopify order. When it isn't sure, it suggests: on the courier's page, in **Shipments without an order**, press **Confirm** for the right order or **Not this one**.
+
+## Notifications
+
+In **Settings** > **Notifications**, in the **Delivery and cash on delivery** group, you choose where you hear about:
+
+- **Parcel not delivered**: refused, not delivered or being returned. It's urgent, so it arrives at once and by email too.
+- **Cash on delivery not paid out**: collected but not paid out to you within the business days you set.
+- **Shipments without an order**: waiting for you to confirm their order.
 
 ## Alert for a late cash-on-delivery payout
 
-On the courier's page you set after how many business days from collection you want an alert if the cash on delivery hasn't been paid out to you (1 to 30, 7 by default).
+On the courier's page, in the **Alert for a late payout** card, set **Business days after collection** to how many business days from collection you want an alert after, if the cash on delivery hasn't been paid out to you (1 to 30, 7 by default).
 
 ## Disconnecting
 
-On the courier's page, press **Disconnect** and confirm. The connection details are deleted at once and tracking stops. The shipment history Lynk already has stays on your orders.
+On the courier's page, choose **Disconnect ACS** (or **Disconnect BOX NOW**) from the menu, type the courier's name to confirm and press **Disconnect**. The connection details are deleted at once and tracking stops. The shipment history Lynk already has stays on your orders.
