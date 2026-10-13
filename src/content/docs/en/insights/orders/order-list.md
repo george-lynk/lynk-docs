@@ -81,3 +81,17 @@ Orders that don't count in revenue are **excluded orders**. You see them in the 
 | **All**, **Profitable**, **Low Margin**, **No Cost** | Filters by profitability |
 | **Sync states** | Updates order states from the channel updates that have already arrived |
 | **Export CSV** | Downloads the orders you see as a CSV file |
+
+## Open in the channel, and the document number
+
+On the new Orders page, every order has an external-link icon next to its code, and the order details have the same button. It opens the order in its channel's admin, in a new tab:
+
+| Channel | Button | What it opens |
+|---|---|---|
+| Shopify | **Open in Shopify** | The order in the Shopify admin |
+| Skroutz | **Open in Skroutz** | The order on Skroutz Merchants |
+| Shopflix | **Orders on Shopflix** | The Shopflix orders list, because there each order opens in a side panel. The order number is copied so you can find it in the list |
+
+If the order's or the store's details are missing (for example, Shopify isn't connected), the button isn't shown.
+
+Softone is a desktop application, so there is no link that opens a document. In the order details, on the **Order document** card, **Copy document number** copies the document's series and number so you can look it up in Softone. The card also shows the **Softone key (FINDOC)** when there is one.
