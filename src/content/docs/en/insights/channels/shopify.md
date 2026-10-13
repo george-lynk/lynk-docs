@@ -91,6 +91,27 @@ Older orders are not sent to Softone automatically. Note, however, that the **Pu
 - The **Webhook activity** chart shows the events received in the last 24 hours.
 - The **Push status** card counts the marketplace orders sent to Shopify (**Orders pushed**, **Pending push**, **Failed pushes**).
 
+## In the new version: product names in your language
+
+*Describes the new version of the app, coming soon.*
+
+If your Shopify store has its products in both Greek and English (with Shopify's translations, for example the **Translate & Adapt** app), Lynk shows each product in the language you chose in Lynk: the Greek title in Greek, the English title in English. This applies everywhere: on the order lines, in **Products**, in the analytics and in stock. The search in **Products** finds a product by either name.
+
+- If a product has no translation in your language, you see its title in the store's main language.
+- The order keeps the title as it came from Shopify, and the documents in Softone keep the item's Softone name and code. Only the name you see changes.
+- A change to a product usually arrives within a few minutes. Changes to translations arrive within a day.
+
+### The permission for translations
+
+To read the translations, Lynk needs two Shopify permissions: `read_translations` and `read_locales`. A new connection asks for them together with the others.
+
+If Shopify was already connected, everything works as before and you see the titles as they came with the orders. **Home** shows one notice, **Product names in Greek and English**. To turn the names on:
+
+1. Add `read_translations` and `read_locales` to your Shopify app's permissions.
+2. In Lynk, click **Reconnect** on the notice and approve the new permissions in Shopify.
+
+The names appear after the next catalogue sync, within a day.
+
 ## If something goes wrong
 
 **"Could not connect to Shopify"**: check the **Store URL** (it must end in `.myshopify.com`), the **API key** and the **API secret key**.
