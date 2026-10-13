@@ -49,6 +49,18 @@ In large catalogues each dot is a group of items, and under the chart it says, f
 
 An item with zero stock isn't counted as missing data: it is simply sold out. The **Stock** card reports it as information, and its dot doesn't turn amber.
 
+Under the total, the **Stock** card shows how many items are in stock in each warehouse you named, for example "Κεντρική 3,354 · FBS 10". If you have more than three warehouses, the rest show as "+2". Press the card to see every warehouse.
+
+## How each field was counted
+
+When you press a card, Lynk says how it found the field:
+
+- "Counted from a column of a Softone list, for every item.": the value was read from an item list.
+- "Counted with a filter on Softone's item list, confirmed by item reads.": Lynk asked Softone which items have a value and confirmed it by reading a few items one by one.
+- "Read item by item from Softone.": the value was read item by item (or on a sample, as an estimate).
+
+If the **No cost** card says "By the item list's filter, no item has a value", Softone answered that no item has a cost and the item reads confirmed it. When Softone doesn't give a clear answer, Lynk reads the cost item by item, so a cost that exists in Softone always shows.
+
 ## Estimates and exact numbers
 
 Lynk reads most fields from Softone's lists for all items at once, so the numbers are exact. If a field, for example the cost or whether an item is active, can only be read item by item, the check reads it for a random sample of 300 items and the card shows an estimate:
