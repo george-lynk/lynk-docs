@@ -54,6 +54,15 @@ The cookie value gives access to your Shopflix account while the session is acti
 
 The session expires after a few weeks. When it does, repeat steps 2 to 5.
 
+## Uploading the PDF to Shopflix
+
+In the new version of the app, Lynk can upload the final document's PDF to every Shopflix order, as it does on Skroutz. It is off until you turn it on. It needs the **Owner** role and the Shopflix connection with the **Email** and **API Token**.
+
+1. Open **Automations** > **Final documents** > **Settings**.
+2. In **Where it's delivered**, turn on **PDF upload to Shopflix** and confirm.
+
+From then on, every final document Lynk finds for a Shopflix order goes up to the order once. Shopflix keeps up to 3 files per order. In each Shopflix order's details you see whether the PDF was uploaded, or that the upload is off.
+
 ## What you'll see
 
 - The **Browser session** card shows **Session active** and when it was last updated.

@@ -65,6 +65,7 @@ export default defineConfig({
 								},
 								section('Ξεκινώντας', 'Getting started', 'insights/getting-started'),
 								section('Κανάλια', 'Channels', 'insights/channels'),
+								section('Συνδέσεις', 'Connections', 'insights/connections'),
 								section('Softone ERP', 'Softone ERP', 'insights/softone'),
 								section('Κέρδη & κόστη', 'Profit & costs', 'insights/profit-costs'),
 								section('Παραγγελίες', 'Orders', 'insights/orders'),
