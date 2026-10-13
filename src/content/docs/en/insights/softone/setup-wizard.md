@@ -76,7 +76,7 @@ Choose the series for invoices. Three boxes follow it:
 
 <a id="vat-prefix"></a>
 
-- **How your accountant wants the VAT number in Softone**: with the country prefix (`EL047465549`) or without it (`047465549`). Write it as in the customers you already have: that's how existing customers are found, reports add up and it matches AADE.
+- **How your accountant wants the VAT number in Softone**: with the country prefix (`EL123456789`) or without it (`123456789`). Write it as in the customers you already have: that's how existing customers are found, reports add up and it matches AADE.
 
 <a id="safety-net-customer"></a>
 
