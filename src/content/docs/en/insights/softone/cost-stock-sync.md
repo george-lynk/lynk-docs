@@ -58,7 +58,23 @@ If you named warehouses in the setup guide's **Πεδία Softone** (Softone fie
 - Each item's stock is read from the list row with the same item code. An item that isn't in the list isn't synced (it isn't set to zero). An empty cell means "unknown" and the item isn't updated.
 - If the list isn't found in Softone or lacks one of the columns you named, Lynk doesn't read from another source instead. The run shows as failed until you fix the **Πεδία Softone**.
 - If you haven't named any warehouses, stock is read as before.
-- The **Πεδία Softone** warehouses are read when stock syncs as one quantity. If you sync per warehouse, stock is still read from Softone's warehouses for now, so open orders keep reserving stock. Lynk points this out in your notifications.
+- When stock syncs as one quantity, the **Πεδία Softone** warehouses are always read.
+
+### Stock per warehouse with the Softone fields
+
+Open orders reserve stock in the Softone warehouse their document uses (the **WHOUSE code**). So that each order is subtracted from the right warehouse, link each warehouse to its Softone code:
+
+1. In the guide's **Αποθήκες** (Warehouses) step, pick the **Softone warehouse code** for each warehouse. Each choice shows the code and the name, for example "1000 · Κεντρική". One code links one warehouse only.
+2. Check that each channel sends its orders to a warehouse you linked. Each channel's warehouses are:
+   - **Shopify**: one, the warehouse of its documents. Each Shopify location gets stock from the warehouses you mapped to it.
+   - **Skroutz**: two, the main one and **FBS** (Fulfilled by Skroutz). If you don't set an FBS warehouse, FBS orders use the main one.
+   - **Shopflix**: one.
+   - **OpenCart**: one.
+
+   You set them in each channel's Softone rules (**Warehouse**, **FBS warehouse**).
+3. When everything is linked, the **Αποθήκες** step says "Per-warehouse stock is ready." Until then it shows what's missing, and the per-warehouse sync doesn't use these warehouses, so no open order is left out.
+
+If you later add a Shopify location or a channel without a link, the per-warehouse sync stops using the **Πεδία Softone** warehouses until you link it. Lynk points this out in your notifications.
 
 The same goes for cost: if the **Πεδία Softone** set the cost field or the list it's read from, the cost sync reads that, and the **Primary price field** on the **Cost Sync** tab isn't used. Items the list has no price for are read one by one from Softone.
 
