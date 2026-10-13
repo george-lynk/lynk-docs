@@ -23,5 +23,6 @@ In the order we recommend:
 - [Shopflix](/en/insights/channels/shopflix/): connecting the account and the portal session for commissions.
 - [OpenCart](/en/insights/channels/opencart/): the Lynk script, sending and importing orders.
 - [Order relay](/en/insights/channels/order-relay/): marketplace orders in Shopify or OpenCart.
+- [Couriers: ACS and BOX NOW](/en/insights/channels/couriers/): connect your courier for the delivery and cash on delivery of your e-shop's orders (new version, coming soon).
 
 To send each channel's orders to Softone, see [Softone ERP](/en/insights/softone/).

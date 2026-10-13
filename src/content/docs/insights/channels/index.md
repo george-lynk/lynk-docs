@@ -23,5 +23,6 @@ sidebar:
 - [Shopflix](/insights/channels/shopflix/): σύνδεση του λογαριασμού και συνεδρία του portal για τις προμήθειες.
 - [OpenCart](/insights/channels/opencart/): το script της Lynk, αποστολή και εισαγωγή παραγγελιών.
 - [Προώθηση παραγγελιών](/insights/channels/order-relay/): οι παραγγελίες των marketplaces στο Shopify ή στο OpenCart.
+- [Courier: ACS και BOX NOW](/insights/channels/couriers/): η σύνδεση της courier σας, για την παράδοση και την αντικαταβολή των παραγγελιών του e-shop (νέα έκδοση, έρχεται σύντομα).
 
 Για να στέλνονται οι παραγγελίες κάθε καναλιού στο Softone, δείτε [Softone ERP](/insights/softone/).
