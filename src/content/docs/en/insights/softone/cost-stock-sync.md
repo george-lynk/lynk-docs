@@ -50,6 +50,18 @@ The tab shows how many items Lynk holds (**SKUs cached**), when stock was last r
 
 On the **Connection** tab, the warehouses card maps each Softone warehouse (WHOUSE code) to a Shopify location. In the English app this card currently shows its Greek labels (**Αποθήκες**, **Κωδικός WHOUSE**, **Τοποθεσία Shopify**).
 
+## Warehouses and cost from the Softone fields
+
+If you named warehouses in the setup guide's **Πεδία Softone** (Softone fields: a Softone item list and one of its columns per warehouse, for example "Κεντρική" in column V1), Lynk reads stock from those columns. The same warehouses are used everywhere: in the catalog check, in Lynk's stock and in the guide's **Αποθήκες** (Warehouses) step.
+
+- The **Αποθήκες** step lists your warehouses by the names you gave them. Pick, for each one, the Shopify location it supplies.
+- Each item's stock is read from the list row with the same item code. An item that isn't in the list isn't synced (it isn't set to zero). An empty cell means "unknown" and the item isn't updated.
+- If the list isn't found in Softone or lacks one of the columns you named, Lynk doesn't read from another source instead. The run shows as failed until you fix the **Πεδία Softone**.
+- If you haven't named any warehouses, stock is read as before.
+- The **Πεδία Softone** warehouses are read when stock syncs as one quantity. If you sync per warehouse, stock is still read from Softone's warehouses for now, so open orders keep reserving stock. Lynk points this out in your notifications.
+
+The same goes for cost: if the **Πεδία Softone** set the cost field or the list it's read from, the cost sync reads that, and the **Primary price field** on the **Cost Sync** tab isn't used. Items the list has no price for are read one by one from Softone.
+
 ## What you'll see
 
 - In the **Product Catalog** card, the date of the last sync.
