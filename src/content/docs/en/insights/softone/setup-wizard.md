@@ -97,7 +97,7 @@ For each channel, you choose whether consumers become customers in Softone one b
 
 <a id="default-customer"></a>
 
-**Default customer (and fallback).** With "A new customer per buyer", each segment's retail customer is also the fallback: if Softone doesn't accept the new customer, or the search for an existing one fails, the order goes to it instead of stopping. You see it under **Needs you** ("went to the walk-in customer"), with the orders and the reason. Once you've fixed the cause, send them again: Lynk tries the buyer again and, if that works, updates the same document with the right customer. If you don't set a default customer, such an order isn't sent, and the guide points this out.
+**Default customer (and fallback).** With "A new customer per buyer", each segment's retail customer is also the fallback: if Softone doesn't accept the new customer, or the search for an existing one fails, the order goes to it instead of stopping. If Softone just isn't answering for a while, Lynk retries first as usual, and uses the default customer only once the retries run out. You see it under **Needs you** ("went to the walk-in customer"), with the orders and the reason. Once you've fixed the cause, send them again: Lynk tries the buyer again and, if that works, updates the same document with the right customer. If you don't set a default customer, such an order isn't sent, and the guide points this out.
 
 <a id="duplicate-check"></a>
 
