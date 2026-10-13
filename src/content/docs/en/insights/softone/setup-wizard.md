@@ -18,13 +18,17 @@ In the **Catalogue** step of the setup wizard, Lynk reads your Softone items and
 
 1. In the setup wizard, open the **Catalogue** step.
 
-2. On the **Softone catalogue** card, press **Load now** (or **Load again** if a check has run before).
+2. The first time, the **Softone catalogue** card opens with **Softone fields**: where we read the retail and wholesale price, cost, barcode, VAT, active, the e-shop flag and your warehouses. The usual fields are already filled in. Change whatever differs in your Softone and press **Save and check**. The check starts right away.
+
+   <!-- TODO screenshot: Softone fields as the card's first step. -->
+
+3. Next time, press **Load again**. **Softone fields** stays folded under the card. If you change the fields after the last check, the card says **The fields changed · check again**: press it for a new check.
 
    <!-- TODO screenshot: the Softone catalogue card during a check. -->
 
-3. Wait for the dot chart to fill. Most checks finish in a few seconds.
+4. Wait for the dot chart to fill. Most checks finish in a few seconds.
 
-4. Press a card (**No retail price**, **No cost**, **No barcode**, **No VAT category**, **Stock**, **Inactive**) to see which items need something.
+5. Press a card (**No retail price**, **No wholesale price**, **No cost**, **No barcode**, **No VAT category**, **Inactive**, **Stock**) to see which items need something.
 
 ## Which items are checked
 
@@ -32,7 +36,7 @@ The check looks at the items you sell: your Shopify store's products and what so
 
 If some items you sell aren't in Softone's item list, the card says so: they are inactive in Softone or not there.
 
-The **SKU readiness report** does the same for codes: it compares the SKUs of your store's products and of what sold in the last 90 days with Softone's codes, even before the first order.
+The **SKU readiness report** does the same for codes: it compares the SKUs of your store's products and of what sold in the last 90 days with Softone's codes, even before the first order. Each SKU shows its product's name: from the order or, for a product not sold yet, its Shopify title with the variant (for example "T-shirt — Red / L"). The number of orders shows only for SKUs that have orders. **Download the list** downloads the missing SKUs with their names.
 
 ## The dot chart
 
@@ -49,7 +53,27 @@ In large catalogues each dot is a group of items, and under the chart it says, f
 
 An item with zero stock isn't counted as missing data: it is simply sold out. The **Stock** card reports it as information, and its dot doesn't turn amber.
 
-Under the total, the **Stock** card shows how many items are in stock in each warehouse you named, for example "Κεντρική 3,354 · FBS 10". If you have more than three warehouses, the rest show as "+2". Press the card to see every warehouse.
+Under the total, the **Stock** card shows how many items are in stock in each warehouse you named, for example "Κεντρική 3,354 · FBS 10". If you have more than three warehouses, the rest show as "+2".
+
+## Warehouses
+
+If you named warehouses in **Softone fields**, a **Warehouses** section appears under the cards, one row per warehouse:
+
+- the Softone column it is read from,
+- "Column found", with how many items are in stock and how many are at zero,
+- or "Column not found", with the **Fix the field** button.
+
+Press **See items** on a warehouse: its dots light up and its items at zero stock are listed, with the values read. Press it again to go back to the cards.
+
+The section shows whether stock is read correctly. To link each warehouse to a Shopify location, press **Connect the warehouses to Shopify**: it opens the wizard's optional **Warehouses** step.
+
+## Wholesale price
+
+The **No wholesale price** card shows the items without a wholesale price. It is information: no order stops and the item's dot doesn't turn amber.
+
+## The values read
+
+In every item list, under each item's name, Lynk shows the values it read from Softone, so you can check the fields come through correctly: **Retail**, **Wholesale**, **Cost**, **Barcode**, **VAT**, **Active** (Yes or No) and **Stock** per warehouse. A field read empty shows as "—". Only the fields read for the item show: for example, if you set your costs in Lynk, cost doesn't show here.
 
 ## How each field was counted
 
