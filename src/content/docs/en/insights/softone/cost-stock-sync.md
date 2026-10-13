@@ -58,6 +58,7 @@ If you named warehouses in the setup guide's **Πεδία Softone** (Softone fie
 - Each item's stock is read from the list row with the same item code. An item that isn't in the list isn't synced (it isn't set to zero). An empty cell means "unknown" and the item isn't updated.
 - If the list isn't found in Softone or lacks one of the columns you named, Lynk doesn't read from another source instead. The run shows as failed until you fix the **Πεδία Softone**.
 - If you haven't named any warehouses, stock is read as before.
+- The **Πεδία Softone** warehouses are read when stock syncs as one quantity. If you sync per warehouse, stock is still read from Softone's warehouses for now, so open orders keep reserving stock. Lynk points this out in your notifications.
 
 The same goes for cost: if the **Πεδία Softone** set the cost field or the list it's read from, the cost sync reads that, and the **Primary price field** on the **Cost Sync** tab isn't used. Items the list has no price for are read one by one from Softone.
 
