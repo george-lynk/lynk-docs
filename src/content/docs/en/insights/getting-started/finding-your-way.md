@@ -56,3 +56,55 @@ Opens from your name at the bottom of the menu.
 | **Billing** | The plans (**Plans**) |
 | **Notifications** | Notification settings |
 | **Logout** | Signs you out |
+
+## In the new version: side menu and top bar
+
+*Describes the new version of the app, coming soon.*
+
+On a computer, the side menu and the top bar share one colour and frame the page, which sits on a light sheet with rounded corners.
+
+### Side menu
+
+From top to bottom:
+
+| Item | What it does |
+|---|---|
+| Lynk logo | Opens **Home** |
+| Store | Shows your store and what you've connected. Opens the list of organisations |
+| **Home**, **Orders** | Open their page. On **Orders**, the number shows how many issues need you |
+| **Flows**, **Insights**, **Manage** | Groups of pages. In the collapsed menu they open the list of their pages next to them |
+| **What's coming** | What we're building and what comes next |
+| **Help** | Opens help for the page you're on. The **?** key opens it too |
+| **Expand menu** / **Collapse menu** | Changes the width of the menu |
+
+The menu has two widths:
+
+- **Collapsed** (the default): large icons with their name underneath. Hover over **Flows**, **Insights** or **Manage**, or click them, to see their pages. The store shows as an icon; hover over it for its name.
+- **Expanded**: every page with its name, by section, and the store with its name.
+
+With the keyboard: the **↑** and **↓** arrows move through the menu, **→** opens a group's pages, and **←** or **Esc** goes back to the group.
+
+### Top bar
+
+| Item | What it does |
+|---|---|
+| Search | Finds pages in the app. The **/** key opens it too |
+| **Ask Lynk** | Questions about your sales, profit and flows |
+| Bell | Your recent notifications |
+| Your initial | The user menu |
+
+### User menu
+
+Opens from your initial at the top right. Among its items are three display options:
+
+| Item | What it does |
+|---|---|
+| **Expanded menu** | Shows the menu with the page names |
+| **Dark menu** | Makes the side menu and the top bar dark. The page stays light |
+| **Less motion** | Fewer motion effects on screen |
+
+The menu's width and colour are saved on this computer: on another computer you start again with the collapsed, light menu.
+
+### On a phone
+
+The pages are in the bottom bar: **Home**, **Orders**, **Flows**, **Notifications** and **More**, which opens every page. The menu width and colour options apply to computers only.
