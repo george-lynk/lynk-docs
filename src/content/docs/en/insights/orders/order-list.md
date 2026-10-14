@@ -72,6 +72,27 @@ Orders that don't count in revenue are **excluded orders**. You see them in the 
 | **Fair** | 60% to 80% |
 | **Needs Attention** | Below 60% |
 
+## Delivery method
+
+For every Shopify order, Lynk shows how it is delivered, from the shipping method the customer chose at your store's checkout:
+
+| Method | When |
+|---|---|
+| **ACS** | The shipping method or the tracking number names ACS |
+| **BOX NOW** | The shipping method or the tracking number names BOX NOW |
+| **Store pickup** | The customer collects the order from your store. There is no tracking number |
+| **Other method** | Any other method. It shows with the name it has in your store |
+
+In the list, the method shows under the order code. The order's **Shipment** card (in the side panel and on the full page) shows:
+
+- the delivery method, with the ACS or BOX NOW logo
+- the shipping charged to the customer, after any discount
+- the tracking numbers. An ACS or BOX NOW number opens that courier's tracking page in a new tab, and **Copy** copies it
+
+If you have connected ACS or BOX NOW, the same card also shows the parcel's progress and its cash on delivery.
+
+The **Delivery method** filter (ACS, BOX NOW, Pickup, Other) shows only the Shopify orders with that method.
+
 ## Filters and actions
 
 | Item | What it does |
