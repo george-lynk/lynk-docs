@@ -109,7 +109,7 @@ For each channel, you choose whether consumers become customers in Softone one b
 
 <a id="change-later"></a>
 
-**Changing it later.** You'll find the same settings in the channel's rules (**Flows** → the channel → **Rules**), with the same words and the same values as the guide. On the **Customers** card, while **A separate customer for purchases from abroad** is on, Greece and abroad each have their own approach and their own retail customer, in place of the single choice. On the **VAT & accounting categories** card, the category question has **A different category per region**. Every Softone value shows its code, e.g. `3099 · ΙΔ · Ιδιώτες`.
+**Changing it later.** You'll find the same settings in the channel's rules (**Flows** → the channel → **Rules**), with the same words and the same values as the guide. On the **Customers** card, while **A separate customer for purchases from abroad** is on, Greece and abroad each have their own approach and their own retail customer, in place of the single choice. On the **VAT & accounting categories** card, the category question has **A different category per region**. Every Softone value shows its code, e.g. `3099 · ΙΔ · Ιδιώτες`. On the **Payments** and **Shipping & carriers** cards, the mapping tables take new values and remove rows, as in the payments question. The carriers table also lists the carriers that appear in your orders.
 
 The VAT number written on consumers (default `000000000`) isn't a question in the guide: your partner changes it under **For Softone partners** in the channel's rules.
 
@@ -128,7 +128,7 @@ Every Softone installation has its own VAT codes. For each rate in your orders, 
 ### Warehouse, payments and shipping
 
 - **Warehouse**, and for Skroutz the **FBS** warehouse.
-- **Payments**: each payment method of the channel matches one in Softone, and **All other methods** covers the ones that appear later.
+- **Payments**: each payment method of the channel matches one in Softone, and **All other methods** covers the ones that appear later. For a method that hasn't appeared in an order yet, type it in the box under the table and select **+ Value**. Select **×** next to a row to remove its mapping. A method that appears in your orders stays in the table, without a mapping. **All other methods** can't be removed.
 - **Shipping** (Shopify only): the expense code for the shipping the customer pays. On Skroutz and Shopflix, shipping doesn't go into the document.
 
 <a id="order-numbers"></a>
