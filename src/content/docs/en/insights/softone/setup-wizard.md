@@ -107,6 +107,10 @@ For each channel, you choose whether consumers become customers in Softone one b
 
 **Category of new consumers.** The customers Lynk creates go into one category (TRDCATEGORY, default 3099), and the duplicate check looks only in it, so a consumer is never mixed up with a business. If your accountant splits consumers by region, switch on **A different category per region** and choose a category for Greece, another EU country and outside the EU. Where you don't choose one, the single category applies.
 
+<a id="change-later"></a>
+
+**Changing it later.** You'll find the same settings in the channel's rules (**Flows** → the channel → **Rules**), with the same words and the same values as the guide. On the **Customers** card, while **A separate customer for purchases from abroad** is on, Greece and abroad each have their own approach and their own retail customer, in place of the single choice. On the **VAT & accounting categories** card, the category question has **A different category per region**. Every Softone value shows its code, e.g. `3099 · ΙΔ · Ιδιώτες`.
+
 The VAT number written on consumers (default `000000000`) isn't a question in the guide: your partner changes it under **For Softone partners** in the channel's rules.
 
 <a id="new-customer-codes"></a>
