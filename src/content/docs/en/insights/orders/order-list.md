@@ -89,7 +89,7 @@ In the list, the method shows under the order code. The order's **Shipment** car
 - the shipping charged to the customer, after any discount
 - the tracking numbers. An ACS or BOX NOW number opens that courier's tracking page in a new tab, and **Copy** copies it
 
-If you have connected ACS or BOX NOW, the same card also shows the parcel's progress and its cash on delivery.
+If you have connected ACS or BOX NOW, the same card also shows the parcel's progress and its cash on delivery. The order's progress in the list then ends on a **Delivery** step: in progress while the parcel travels or waits in a locker, done once delivered, red when the recipient refuses it, it isn't delivered or it is returned, and empty while there is no parcel yet. A store pickup shows **Pickup**. Hover over the progress to see the courier and its latest update. The **Delivery** box at the top of the order shows the same.
 
 The **Delivery method** filter (ACS, BOX NOW, Pickup, Other) shows only the Shopify orders with that method.
 
