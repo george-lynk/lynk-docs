@@ -19,7 +19,7 @@ Tracking covers your e-shop's orders (Shopify). Skroutz and Shopflix orders aren
 
 ## What Lynk reads
 
-Lynk **only reads** from the courier. It never creates, prints or cancels vouchers, and never issues pickup lists.
+Lynk **only reads** from the courier. It never creates, prints or cancels vouchers, and never issues pickup lists. It writes to Shopify only if you switch on the [automations](#shopify-automations).
 
 For each shipment it keeps the voucher number, the status with its times, the store or locker, and the cash-on-delivery amounts. It never keeps the recipient's name, phone, email or address.
 
@@ -102,6 +102,19 @@ In **Settings** > **Notifications**, in the **Delivery and cash on delivery** gr
 ## Alert for a late cash-on-delivery payout
 
 On the courier's page, in the **Alert for a late payout** card, set **Business days after collection** to how many business days from collection you want an alert after, if the cash on delivery hasn't been paid out to you (1 to 30, 7 by default).
+
+<a id="shopify-automations"></a>
+
+## Automations in Shopify
+
+On the courier's page, in the **Automations in Shopify** card, two switches update the Shopify order for you. They are off until you switch them on, and you set them separately for ACS and for BOX NOW:
+
+- **Mark paid in Shopify when the COD is collected**: when the courier confirms the collection, the order is marked **Paid** in Shopify. If it is already paid, or the courier's amount differs from the order's balance, nothing changes. A different amount shows in **Needs you**.
+- **Tag “lynk-delivered” when delivered**: when the courier delivers, the `lynk-delivered` tag goes on the Shopify order. It is a tag, not Shopify's **Delivered** status, which needs a new Shopify permission.
+
+Switching one on asks you to confirm first, and below it you see since when it is on. They apply only to e-shop orders, never to Skroutz or Shopflix, and only from when you switch them on: older shipments don't change. Each action happens once per order.
+
+In the order's **Shipment** section, **In Shopify** shows what happened and, when nothing changed, why: for example "it was already paid" or "not cash on delivery". If Shopify doesn't answer, Lynk retries on its own.
 
 ## Disconnecting
 
