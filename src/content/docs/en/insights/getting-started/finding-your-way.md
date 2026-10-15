@@ -93,6 +93,10 @@ With the keyboard: the **↑** and **↓** arrows move through the menu, **→**
 | Bell | Your recent notifications |
 | Your initial | The user menu |
 
+<a id="top-notices"></a>
+
+**Notices at the top of the page.** Anything important for you shows in one strip under the top bar, the most important first: a scheduled account **Deletion**, **Maintenance**, **Softone** not answering or you working in Softone's **DEMO** company, two-step sign-in under **Security**, **Partial data** on a page that didn't fully load. Where it helps, each notice has the action that resolves it. If there are more, select for example **One more notice** to see them all.
+
 ### User menu
 
 Opens from your initial at the top right. Among its items are three display options:
