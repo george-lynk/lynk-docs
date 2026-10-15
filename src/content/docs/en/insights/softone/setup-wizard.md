@@ -88,12 +88,12 @@ Choose the series for invoices. Three boxes follow it:
 
 For each channel, you choose whether consumers become customers in Softone one by one, or all go to one retail customer:
 
-- **A new customer per buyer**: each buyer becomes a customer in Softone, with a code from the pattern you set (for example `B2C{αύξων:4}` from 1 gives B2C0001). The guide shows the next code.
+- **A new customer per buyer**: each buyer becomes a customer in Softone. Under **New consumer codes** you set a **Prefix** and a **Number of digits**: for example `30.01.` with 5 digits gives 30.01.00001. When sending, Lynk finds the highest code starting with the prefix in Softone and uses the next one.
 - **One shared retail customer**: every order goes to one customer that already exists in Softone (for example "ΠΕΛΑΤΗΣ ΛΙΑΝΙΚΗΣ"). The guide looks for it and suggests it; you can search by name or type the code.
 
 <a id="greece-abroad"></a>
 
-**Greece and abroad separately.** If you switch on **Separate Greece and abroad**, you set the approach, the retail customer and the numbering separately, by the shipping country. For example: a new customer for each buyer in Greece, and one retail customer for everyone abroad.
+**Greece and abroad separately.** If you switch on **Separate Greece and abroad**, you set the approach, the retail customer and the numbering (prefix and digits) separately, by the shipping country. For example: a new customer for each buyer in Greece, and one retail customer for everyone abroad.
 
 <a id="default-customer"></a>
 
@@ -101,7 +101,7 @@ For each channel, you choose whether consumers become customers in Softone one b
 
 <a id="duplicate-check"></a>
 
-**Duplicate customer check.** Before creating a new customer, Lynk can look in Softone for a buyer with the same email or phone and use it. It can also fill in only what the customer record lacks, never changing what's there. The **Country code for phone numbers** (default +30) is used only here: a phone number without a country code, for example 6941234567, is read as +306941234567, so it matches the same number in Softone.
+**Duplicate customer check.** Before creating a new customer, Lynk can look in Softone for a buyer with the same email or phone and use it. It can also fill in only what the customer record lacks, never changing what's there. A phone number without a country code, for example 6941234567, is read with the country code of the order's country (+30 for Greece, +357 for Cyprus), so it matches the same number in Softone. The **Phone country code** (default +30, under **Advanced**; in the channel's rules it is called **Country code when the country is missing**) is used only when the order has no country. New customers are written to Softone with their phone number and the country code of the order's country.
 
 <a id="consumer-category"></a>
 
@@ -111,13 +111,17 @@ For each channel, you choose whether consumers become customers in Softone one b
 
 **Changing it later.** You'll find the same settings in the channel's rules (**Flows** → the channel → **Rules**), with the same words and the same values as the guide. On the **Customers** card, while **A separate customer for purchases from abroad** is on, Greece and abroad each have their own approach and their own retail customer, in place of the single choice. On the **VAT & accounting categories** card, the category question has **A different category per region**. Every Softone value shows its code, e.g. `3099 · ΙΔ · Ιδιώτες`. On the **Payments** and **Shipping & carriers** cards, the mapping tables take new values and remove rows, as in the payments question. The carriers table also lists the carriers that appear in your orders.
 
-The VAT number written on consumers (default `000000000`) isn't a question in the guide: your partner changes it under **For Softone partners** in the channel's rules.
+The VAT number written on consumers (default `000000000`) isn't a question in the guide: your partner changes it under [**For Softone partners**](/en/insights/softone/advanced-fields/) in the channel's rules.
 
 <a id="new-customer-codes"></a>
 
 ### How new businesses are numbered
 
-The code pattern, for example `WEB{αύξων:4}` from 5000, gives WEB5000, WEB5001 and so on. The guide shows the next code. With `{ΑΦΜ}` the code is the VAT number.
+Under **New business codes** you set a **Prefix** and a **Number of digits**, as for consumers: for example `30.00.` with 5 digits gives 30.00.00001, and Lynk always uses the next free code in Softone.
+
+If you switch on **Separate Greece and abroad**, you set the prefix and digits separately for **Greece** and **Abroad**, for example `30.00.` and `30.02.`. The invoice country decides: GR or blank is Greece, any other is abroad.
+
+If new businesses are written today to a fixed code, with their VAT number as the code or with your own formula, the question says so. Once you change the prefix or the digits, numbering becomes sequential.
 
 <a id="vat-codes"></a>
 
@@ -130,12 +134,15 @@ Every Softone installation has its own VAT codes. For each rate in your orders, 
 - **Warehouse**, and for Skroutz the **FBS** warehouse.
 - **Payments**: each payment method of the channel matches one in Softone, and **All other methods** covers the ones that appear later. For a method that hasn't appeared in an order yet, type it in the box under the table and select **+ Value**. Select **×** next to a row to remove its mapping. A method that appears in your orders stays in the table, without a mapping. **All other methods** can't be removed.
 - **Shipping** (Shopify only): the expense code for the shipping the customer pays. On Skroutz and Shopflix, shipping doesn't go into the document.
+- **Cash on delivery**: with **Cash on delivery goes in as an expense line** and **The expense code for cash on delivery**, the cash-on-delivery charge is written as an expense, not as a product. It is the same rule as **Cash on delivery** in the **Expenses (e.g. cash on delivery)** card of the channel's rules: change it in either place and it changes in both. In the same card, an expense rule without an expense account reads **left out**: the line isn't sent to the document.
 
 <a id="order-numbers"></a>
 
 ### Order with Shopify (Skroutz, Shopflix)
 
 When a marketplace's orders also go to Shopify, Lynk is suggested to **wait for the Shopify number**. The Softone document then has both numbers: the marketplace number in the customer document field and the Shopify number in the remarks, or next to the marketplace number. You find the document by either one.
+
+Under **If Shopify fails** you choose what happens when the order doesn't go into Shopify: **Wait** (the order waits until it does) or **Send to Softone without it**. With the second, the document is created without the Shopify number; once the order is in Shopify, select **Resend** in **Orders** to add the number. Switching off **Wait for the Shopify number** takes effect at once, also for stores set up in the previous version.
 
 <a id="which-orders"></a>
 
@@ -156,6 +163,14 @@ If a question says the Softone lists or a customer haven't been checked recently
 When a channel has no rules yet and another channel is ready, the guide suggests starting from its rules. You see what changes first, confirm, and you can undo it. Settings that concern one channel only (FBS, Shopify, Shopify invoices) aren't copied.
 
 The copy happens once. After that, each channel has its own rules, and a change to one channel doesn't change the others. For example, you can create a customer for each e-shop buyer and send Skroutz buyers to one retail customer.
+
+<a id="registries"></a>
+
+## AADE VAT check and VIES (optional)
+
+The **AADE VAT check** and **VIES check** steps are used in the tests: with your AADE registry credentials, the test orders with an invoice show the company's details, and with your EU VAT number the intra-community scenario shows the VIES answer.
+
+If you've already set them up, the guide doesn't ask again: it shows what is set up (for AADE the VAT number, the username and the last test; for VIES your EU VAT number) with a **Change** button, and the steps show as done. If the AADE credentials are saved but the check is off, select **Turn the check on**.
 
 ## Preview
 
