@@ -1,6 +1,6 @@
 ---
-title: "What is Lynk Insights"
-description: "What Lynk Insights does, who it is for and which systems it connects."
+title: "What is Flows by Lynk"
+description: "What Flows by Lynk does, who it is for and which systems it connects."
 sidebar:
   order: 1
 ---
@@ -9,7 +9,7 @@ sidebar:
 
 ## What it is
 
-Lynk Insights connects the systems of a Greek online store: your Shopify store, the Skroutz and Shopflix marketplaces, OpenCart and Softone ERP. Every order passes through Lynk, so the app can send it where it needs to go and show you what each one earned.
+Flows by Lynk connects the systems of a Greek online store: your Shopify store, the Skroutz and Shopflix marketplaces, OpenCart and Softone ERP. Every order passes through Lynk, so the app can send it where it needs to go and show you what each one earned.
 
 It is for stores that sell on Shopify or on the marketplaces and, optionally, keep their documents and stock in Softone.
 

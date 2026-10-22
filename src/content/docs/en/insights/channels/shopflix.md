@@ -7,7 +7,7 @@ sidebar:
 
 *Describes the current version of the app.*
 
-In this guide you connect your Shopflix account to Lynk Insights. Orders arrive by webhook and are also synced automatically every 4 hours. With the **portal session**, Lynk also fetches the exact commission of every order, so profit is calculated correctly.
+In this guide you connect your Shopflix account to Flows by Lynk. Orders arrive by webhook and are also synced automatically every 4 hours. With the **portal session**, Lynk also fetches the exact commission of every order, so profit is calculated correctly.
 
 ## Before you start
 

@@ -1,17 +1,17 @@
 ---
 title: "First setup"
-description: "Sign in to Lynk Insights and set up your connections in the right order."
+description: "Sign in to Flows by Lynk and set up your connections in the right order."
 sidebar:
   order: 2
 ---
 
 *Describes the current version of the app.*
 
-In this guide you sign in to Lynk Insights and set up your store's connections in the order we recommend. At the end, your orders reach Lynk and, if you use Softone, they become order documents in Softone.
+In this guide you sign in to Flows by Lynk and set up your store's connections in the order we recommend. At the end, your orders reach Lynk and, if you use Softone, they become order documents in Softone.
 
 ## Before you start
 
-- **A Lynk Insights account.** The app is in private beta. If you don't have an account, leave your email on the waitlist (**Join the waitlist**) and we'll get in touch. If an account owner invited you, follow the invitation link you received by email.
+- **A Flows by Lynk account.** The app is in private beta. If you don't have an account, leave your email on the waitlist (**Join the waitlist**) and we'll get in touch. If an account owner invited you, follow the invitation link you received by email.
 - **Admin access** to the systems you'll connect: Shopify, Skroutz Merchants, Shopflix, OpenCart or Softone.
 - For Softone, the web services sign-in details from your Softone partner, ideally for a demo (test) installation as well.
 

@@ -1,6 +1,6 @@
 ---
 title: "Glossary"
-description: "The terms Lynk Insights uses, such as document, series and profit margin."
+description: "The terms Flows by Lynk uses, such as document, series and profit margin."
 sidebar:
   label: "Overview"
   order: 0

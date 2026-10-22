@@ -7,7 +7,7 @@ sidebar:
 
 *Describes the current version of the app.*
 
-In this guide you connect your OpenCart store to Lynk Insights. The connection uses a Lynk file (script) that you upload once to your store's server. Once connected:
+In this guide you connect your OpenCart store to Flows by Lynk. The connection uses a Lynk file (script) that you upload once to your store's server. Once connected:
 
 - Skroutz and Shopflix orders can be created in OpenCart. See [Order relay](/en/insights/channels/order-relay/).
 - orders placed in OpenCart itself can come into Lynk every 5 minutes.

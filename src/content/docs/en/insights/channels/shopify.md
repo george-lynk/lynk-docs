@@ -7,7 +7,7 @@ sidebar:
 
 *Describes the current version of the app.*
 
-In this guide you connect your Shopify store to Lynk Insights. Once connected:
+In this guide you connect your Shopify store to Flows by Lynk. Once connected:
 
 - new Shopify orders reach Lynk by webhook and can be sent to Softone,
 - Lynk can create your Skroutz and Shopflix orders in Shopify. See [Order relay](/en/insights/channels/order-relay/).

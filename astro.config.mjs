@@ -53,7 +53,7 @@ export default defineConfig({
 					[
 						{
 							id: 'insights',
-							label: { el: 'Lynk Insights', en: 'Lynk Insights' },
+							label: { el: 'Flows by Lynk', en: 'Flows by Lynk' },
 							link: '/insights/',
 							icon: 'analytics',
 							items: [

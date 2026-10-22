@@ -11,7 +11,7 @@ In this guide you connect Lynk to Softone ERP. You start with the **Demo** envir
 
 ## Before you start
 
-- A Lynk Insights account on the Pro plan. On other plans, **Softone** shows a lock in the menu.
+- A Flows by Lynk account on the Pro plan. On other plans, **Softone** shows a lock in the menu.
 - From your Softone partner: the web services address (URL), a username and password, and if needed the **App ID**, **Company** and **Branch**. Your Softone licence must include the **Web Service Connector** module.
 - If possible, a test Softone installation for **Demo**.
 

@@ -1,9 +1,9 @@
 ---
 title: "What's new"
-description: "What changed in Lynk Insights in each version, newest first."
+description: "What changed in Flows by Lynk in each version, newest first."
 ---
 
-The changes in Lynk Insights that matter to you, newest first. Each version is split into
+The changes in Flows by Lynk that matter to you, newest first. Each version is split into
 **New**, **Improvements** and **Fixes**. Updates apply automatically; you don't need to do
 anything unless the note says so.
 
