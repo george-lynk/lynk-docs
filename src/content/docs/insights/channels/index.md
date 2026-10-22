@@ -21,7 +21,7 @@ sidebar:
 - [Shopify](/insights/channels/shopify/): σύνδεση του καταστήματος και webhooks.
 - [Skroutz](/insights/channels/skroutz/): το ασφαλές URL webhook για τις παραγγελίες.
 - [Shopflix](/insights/channels/shopflix/): σύνδεση του λογαριασμού και συνεδρία του portal για τις προμήθειες.
-- [OpenCart](/insights/channels/opencart/): το script της Lynk, αποστολή και εισαγωγή παραγγελιών.
+- [OpenCart](/insights/channels/opencart/): το script του Flows, αποστολή και εισαγωγή παραγγελιών.
 - [Προώθηση παραγγελιών](/insights/channels/order-relay/): οι παραγγελίες των marketplaces στο Shopify ή στο OpenCart.
 
 Για να στέλνονται οι παραγγελίες κάθε καναλιού στο Softone, δείτε [Softone ERP](/insights/softone/).

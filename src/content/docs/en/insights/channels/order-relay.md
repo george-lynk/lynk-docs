@@ -37,7 +37,7 @@ Repeat the steps for the other marketplace. Each marketplace has its own setting
 
 ## Duplicates and Softone
 
-Lynk recognises the orders it created in Shopify itself. When Shopify sends them back by webhook, Lynk ignores them, so they don't appear as new Shopify orders and aren't sent to Softone a second time. The order is sent to Softone once, as a marketplace order, with the Skroutz or Shopflix Softone settings.
+Flows recognises the orders it created in Shopify itself. When Shopify sends them back by webhook, Flows ignores them, so they don't appear as new Shopify orders and aren't sent to Softone a second time. The order is sent to Softone once, as a marketplace order, with the Skroutz or Shopflix Softone settings.
 
 ## Sending one order by hand
 

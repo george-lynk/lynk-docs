@@ -21,7 +21,7 @@ In the order we recommend:
 - [Shopify](/en/insights/channels/shopify/): connecting the store and the webhooks.
 - [Skroutz](/en/insights/channels/skroutz/): the secure webhook URL for orders.
 - [Shopflix](/en/insights/channels/shopflix/): connecting the account and the portal session for commissions.
-- [OpenCart](/en/insights/channels/opencart/): the Lynk script, sending and importing orders.
+- [OpenCart](/en/insights/channels/opencart/): the Flows script, sending and importing orders.
 - [Order relay](/en/insights/channels/order-relay/): marketplace orders in Shopify or OpenCart.
 
 To send each channel's orders to Softone, see [Softone ERP](/en/insights/softone/).

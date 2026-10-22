@@ -1,15 +1,15 @@
 ---
 title: "Cost and stock from Softone"
-description: "Bring the item catalog, purchase cost and stock from Softone into Lynk."
+description: "Bring the item catalog, purchase cost and stock from Softone into Flows."
 sidebar:
   order: 5
 ---
 
 *Describes the current version of the app.*
 
-In this guide you bring three things from Softone into Lynk: the item catalog, which orders need before they can be sent; your products' purchase cost, which profit calculations need; and your stock, so you can see it inside Lynk.
+In this guide you bring three things from Softone into Flows: the item catalog, which orders need before they can be sent; your products' purchase cost, which profit calculations need; and your stock, so you can see it inside Flows.
 
-Everything is read **from** Softone. Lynk doesn't change items, cost or stock in Softone, and today it doesn't send Softone stock to your sales channels.
+Everything is read **from** Softone. Flows doesn't change items, cost or stock in Softone, and today it doesn't send Softone stock to your sales channels.
 
 ## Before you start
 
@@ -18,7 +18,7 @@ Everything is read **from** Softone. Lynk doesn't change items, cost or stock in
 
 ## Item catalog
 
-To create the order document, Lynk must find every product of the order in Softone. That's why it syncs the item catalog.
+To create the order document, Flows must find every product of the order in Softone. That's why it syncs the item catalog.
 
 1. Open **Softone** and the **Cost Sync** tab.
 2. In the **Product Catalog** card, click **Sync catalog** (or **Re-sync catalog**, if it has synced before).
@@ -46,14 +46,14 @@ Cost sync also runs automatically every night, at the time you set in the card.
 1. Open the **Inventory** tab.
 2. Click **Sync now** to read the current stock from Softone.
 
-The tab shows how many items Lynk holds (**SKUs cached**), when stock was last read (**Last snapshot**) and the open reservations (**Open reservations**): quantities from orders that have arrived but haven't been taken out of Softone stock yet. Stock updates only when you click **Sync now**.
+The tab shows how many items Flows holds (**SKUs cached**), when stock was last read (**Last snapshot**) and the open reservations (**Open reservations**): quantities from orders that have arrived but haven't been taken out of Softone stock yet. Stock updates only when you click **Sync now**.
 
 On the **Connection** tab, the warehouses card maps each Softone warehouse (WHOUSE code) to a Shopify location. In the English app this card currently shows its Greek labels (**Αποθήκες**, **Κωδικός WHOUSE**, **Τοποθεσία Shopify**).
 
 ## What you'll see
 
 - In the **Product Catalog** card, the date of the last sync.
-- On the **Costs** page, product costs as Lynk read them from Softone.
+- On the **Costs** page, product costs as Flows read them from Softone.
 - On the **Inventory** tab, stock per item and the latest runs under **Recent sync runs**.
 
 ## If something goes wrong

@@ -12,7 +12,7 @@ In this guide you set, for one channel, how its orders become order documents in
 ## Before you start
 
 - Softone connected, with **Demo** as the active environment. See [Connecting Softone](/en/insights/softone/connect/).
-- The channel connected to Lynk. See [Channels](/en/insights/channels/).
+- The channel connected to Flows. See [Channels](/en/insights/channels/).
 - From your Softone partner: the codes of the retail and wholesale series, the warehouse code, the retail customer code and, for Shopify and OpenCart, the expense code for shipping.
 
 ## Steps
@@ -27,9 +27,9 @@ In this guide you set, for one channel, how its orders become order documents in
 
 4. In the **Customer Codes (CUSTOMER.CODE)** card, choose the customer for retail orders under **B2C Customer Mode**:
    - **Shared cash customer**: all retail orders go to one retail customer. Enter its code in **Cash Customer Code**. The customer must already exist in Softone.
-   - **Individual customers**: Lynk creates a Softone customer for each retail order.
+   - **Individual customers**: Flows creates a Softone customer for each retail order.
 
-   Under **B2B (Business) Customers**, set how the new companies Lynk creates get their code.
+   Under **B2B (Business) Customers**, set how the new companies Flows creates get their code.
 
 5. In the **Warehouse** card, fill in **Main Warehouse Code**.
 
@@ -37,12 +37,12 @@ In this guide you set, for one channel, how its orders become order documents in
 
 7. Shopify and OpenCart only: in the **B2B Detection** card, set how an order with an invoice is recognised. See [Receipt or invoice](/en/insights/softone/receipt-vs-invoice/).
 
-8. Optionally, fill in the defaults **Default PAYMENT code** and **Default SHIPMENT code**, and the series in the **Final Document Series** card. You need the final document series if you want Lynk to detect the receipt or invoice you issue.
+8. Optionally, fill in the defaults **Default PAYMENT code** and **Default SHIPMENT code**, and the series in the **Final Document Series** card. You need the final document series if you want Flows to detect the receipt or invoice you issue.
 
 9. Click **Save configuration**.
 
 10. :::caution[Documents are created automatically]
-    Once you switch it on, every new order from the channel creates an order document in the active Softone environment, with no further confirmation. Older orders from the channel that were already forwarded to Shopify, OpenCart or a Relay destination and never sent to Softone may also be sent automatically within a few minutes. Lynk cannot delete a document. Check that the active environment is the one you want, and open the **Order Log** right afterwards.
+    Once you switch it on, every new order from the channel creates an order document in the active Softone environment, with no further confirmation. Older orders from the channel that were already forwarded to Shopify, OpenCart or a Relay destination and never sent to Softone may also be sent automatically within a few minutes. Flows cannot delete a document. Check that the active environment is the one you want, and open the **Order Log** right afterwards.
     :::
 
     Go back to the **Configuration** tab and switch on the toggle on the channel's card.

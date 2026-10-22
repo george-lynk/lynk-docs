@@ -33,7 +33,7 @@ npm run preview  # serve the production build
 ```
 src/content/docs/
 ├── index.mdx                 Greek home page (/)
-├── insights/                 Lynk Insights topic, Greek (/insights/)
+├── insights/                 Flows by Lynk topic, Greek (/insights/)
 │   ├── index.mdx
 │   ├── whats-new.md          What's new: one entry per release, newest first
 │   └── <section>/index.md    one folder per sidebar section
@@ -110,7 +110,7 @@ Pick one template from `templates/` per page. Do not mix types on one page.
 
 ### What's new
 
-Each product has a What's new page: for Lynk Insights,
+Each product has a What's new page: for Flows by Lynk,
 `src/content/docs/insights/whats-new.md` («Τι νέο υπάρχει») and
 `src/content/docs/en/insights/whats-new.md` ("What's new"). Every production release
 of the product adds one entry to both, in the same PR, before the release goes out. The

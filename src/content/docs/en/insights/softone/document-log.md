@@ -45,19 +45,19 @@ Open **Softone** and the **Order Log** tab. The cards at the top count orders by
 | **Auto-push disabled** | Automatic sending is off for the channel |
 | **Not configured** | The channel has no Softone settings |
 
-In the delivery column, **Pending** means Lynk is waiting for the final document, **PDF sent** means the PDF was uploaded to Skroutz and **Completed** means the final document was found.
+In the delivery column, **Pending** means Flows is waiting for the final document, **PDF sent** means the PDF was uploaded to Skroutz and **Completed** means the final document was found.
 
 ## Sending one order
 
 1. :::caution[Creates a document in Softone]
-   This step creates an order document in the active Softone environment. Lynk cannot delete it.
+   This step creates an order document in the active Softone environment. Flows cannot delete it.
    :::
 
    On the order's row, click **Push**. If the order had failed, the button says **Retry**.
 
-The order joins the queue and its status changes to **Queued** and then **Pushed**. If it fails, Lynk retries automatically. The counter next to **Queued** (for example 1/3) shows the attempts. To take an order out of the queue before it's sent, click the remove button next to it (**Remove from queue**).
+The order joins the queue and its status changes to **Queued** and then **Pushed**. If it fails, Flows retries automatically. The counter next to **Queued** (for example 1/3) shows the attempts. To take an order out of the queue before it's sent, click the remove button next to it (**Remove from queue**).
 
-Cancelled orders have no **Push** button and are not sent. Orders created directly in OpenCart are not sent to Softone, because they have no VAT number to find the customer. Their row has no **Push** or **Repush** button; it shows **Not for Softone** instead. Hover over it to see why. Skroutz or Shopflix orders that Lynk sends to OpenCart are sent as usual.
+Cancelled orders have no **Push** button and are not sent. Orders created directly in OpenCart are not sent to Softone, because they have no VAT number to find the customer. Their row has no **Push** or **Repush** button; it shows **Not for Softone** instead. Hover over it to see why. Skroutz or Shopflix orders that Flows sends to OpenCart are sent as usual.
 
 If the same order is already being sent, the new send waits and is retried automatically. The order's details show "Waiting since …" (UTC time). If the wait goes over **20 minutes**, the send is marked as failed and the explanation shows in the order's details. First check in Softone whether the order already has a document. If it doesn't, click **Retry**. If the order waits again, click **Get Help** and send us its code.
 
@@ -73,21 +73,21 @@ The **Push all unpushed** button (with the options **Push all**, **B2B only** an
 
 ## Orders that are never sent automatically
 
-Lynk never sends these orders to Softone on its own. They go only when you send them yourself:
+Flows never sends these orders to Softone on its own. They go only when you send them yourself:
 
 - **Excluded orders.** An excluded order isn't sent, automatically or one by one. To send it, click **Re-include** first, then **Push**.
-- **Orders whose sending you cancelled.** **Cancel push** stops **every** order waiting in the queue, not just one. Lynk first asks you to confirm and shows how many orders that is. None of those orders is sent automatically afterwards, and Lynk doesn't put them back in the queue. The same applies to an order you remove from the queue. Their details say **Push cancelled**. To send one, click **Push** or **Retry** on it.
-- **Orders sent to Demo, after you switch back to Live.** When you switch the active environment back to **Live**, Lynk clears the Demo documents of the orders from your Live start date onwards. Only orders that were sent to **Demo** are cleared. Orders that already have a Live document keep it. The cleared orders wait for you, and their details say **Waiting for a manual push**. Before you push one, check in Softone that it doesn't already have a Live document. Then click **Push** on each order you want to send to Live.
+- **Orders whose sending you cancelled.** **Cancel push** stops **every** order waiting in the queue, not just one. Flows first asks you to confirm and shows how many orders that is. None of those orders is sent automatically afterwards, and Flows doesn't put them back in the queue. The same applies to an order you remove from the queue. Their details say **Push cancelled**. To send one, click **Push** or **Retry** on it.
+- **Orders sent to Demo, after you switch back to Live.** When you switch the active environment back to **Live**, Flows clears the Demo documents of the orders from your Live start date onwards. Only orders that were sent to **Demo** are cleared. Orders that already have a Live document keep it. The cleared orders wait for you, and their details say **Waiting for a manual push**. Before you push one, check in Softone that it doesn't already have a Live document. Then click **Push** on each order you want to send to Live.
 
 ## If sending fails
 
-- Lynk makes up to **three** attempts in total.
+- Flows makes up to **three** attempts in total.
 - If all three fail, the status becomes **Push failed** and you receive an email listing the failed orders (at most one email every 30 minutes).
 - Read the message on the order's row, fix the cause (usually a setting or an item missing in Softone) and click **Retry**. See [Softone sending errors](/en/insights/troubleshooting/softone-document-errors/).
 
 ## Correcting a document
 
-Lynk doesn't delete documents in Softone. If an order document was created with the wrong details, you or your accountant correct it in Softone. If a receipt or invoice has already been issued, it is corrected with a credit note.
+Flows doesn't delete documents in Softone. If an order document was created with the wrong details, you or your accountant correct it in Softone. If a receipt or invoice has already been issued, it is corrected with a credit note.
 
 ## Sending an order again (Repush)
 
@@ -99,11 +99,11 @@ If an order already has an order document in Softone and you want to update it (
 
    On the order's row, click **Repush**. **Force repush** in the order's details does the same.
 
-Lynk **updates the same document** (same number) in Softone and doesn't create a second one. If the order doesn't have a document yet, one is created.
+Flows **updates the same document** (same number) in Softone and doesn't create a second one. If the order doesn't have a document yet, one is created.
 
-### When Lynk won't send an order again
+### When Flows won't send an order again
 
-In these cases Lynk refuses and **sends nothing** to Softone:
+In these cases Flows refuses and **sends nothing** to Softone:
 
 | Case | What to do |
 |---|---|
@@ -121,7 +121,7 @@ If the send is refused when you click **Push** or **Repush**, the app shows a re
 
 ## Cancellations and returns
 
-When an order that was already sent to Softone is cancelled or returned on the channel, Lynk emails you. Lynk doesn't change the document in Softone. Let your accountant know so they can make the necessary entries.
+When an order that was already sent to Softone is cancelled or returned on the channel, Flows emails you. Flows doesn't change the document in Softone. Let your accountant know so they can make the necessary entries.
 
 ## If something goes wrong
 
