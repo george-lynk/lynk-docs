@@ -7,7 +7,7 @@ sidebar:
 
 *Describes the current version of the app.*
 
-In this guide you sign in to Flows by Lynk and set up your store's connections in the order we recommend. At the end, your orders reach Lynk and, if you use Softone, they become order documents in Softone.
+In this guide you sign in to Flows by Lynk and set up your store's connections in the order we recommend. At the end, your orders reach Flows and, if you use Softone, they become order documents in Softone.
 
 ## Before you start
 
@@ -35,7 +35,7 @@ In this guide you sign in to Flows by Lynk and set up your store's connections i
 
 7. If you have an OpenCart store, see [OpenCart](/en/insights/channels/opencart/).
 
-8. View your Softone stock in Lynk. See [Cost and stock from Softone](/en/insights/softone/cost-stock-sync/).
+8. View your Softone stock in Flows. See [Cost and stock from Softone](/en/insights/softone/cost-stock-sync/).
 
 9. Add your product costs so profit can be calculated. See [Profit & costs](/en/insights/profit-costs/).
 

@@ -1,16 +1,16 @@
 ---
 title: "OpenCart"
-description: "Connect your OpenCart store with the Lynk script, so marketplace orders are sent there and its own orders come into Lynk."
+description: "Connect your OpenCart store with the Flows script, so marketplace orders are sent there and its own orders come into Flows."
 sidebar:
   order: 4
 ---
 
 *Describes the current version of the app.*
 
-In this guide you connect your OpenCart store to Flows by Lynk. The connection uses a Lynk file (script) that you upload once to your store's server. Once connected:
+In this guide you connect your OpenCart store to Flows by Lynk. The connection uses a Flows file (script) that you upload once to your store's server. Once connected:
 
 - Skroutz and Shopflix orders can be created in OpenCart. See [Order relay](/en/insights/channels/order-relay/).
-- orders placed in OpenCart itself can come into Lynk every 5 minutes.
+- orders placed in OpenCart itself can come into Flows every 5 minutes.
 
 ## Before you start
 
@@ -30,7 +30,7 @@ In this guide you connect your OpenCart store to Flows by Lynk. The connection u
 4. Upload the file to the root folder of OpenCart, where `index.php` is.
 
 :::caution[The file contains passwords]
-`lynk_integration.php` contains your Lynk connection password and your database passwords. Don't send it to anyone and don't upload it to a public repository.
+`lynk_integration.php` contains your Flows connection password and your database passwords. Don't send it to anyone and don't upload it to a public repository.
 :::
 
 ## Step 2: connect to the store
@@ -46,13 +46,13 @@ In this guide you connect your OpenCart store to Flows by Lynk. The connection u
 
 ## Step 3: import orders from OpenCart
 
-If you also want to see orders placed in OpenCart in Lynk:
+If you also want to see orders placed in OpenCart in Flows:
 
 1. In the **Step 3 — Pull orders from OpenCart** card, switch on **Enable order pull**.
 
 2. In **Order statuses to import**, enter the status IDs you want, separated by commas. The defaults are 2 (Processing), 3 (Shipped) and 5 (Complete). You'll find the IDs in OpenCart under **Localisation** > **Order Statuses**.
 
-3. Under **Receipt vs invoice rule**, choose how Lynk decides whether an order goes for a receipt or an invoice. For the **By store ID** and **By customer group** rules, click **Fetch stores** and fill in **Invoice store IDs**, **Receipt store IDs** or **Invoice customer group IDs**. See [Receipt or invoice](/en/insights/softone/receipt-vs-invoice/).
+3. Under **Receipt vs invoice rule**, choose how Flows decides whether an order goes for a receipt or an invoice. For the **By store ID** and **By customer group** rules, click **Fetch stores** and fill in **Invoice store IDs**, **Receipt store IDs** or **Invoice customer group IDs**. See [Receipt or invoice](/en/insights/softone/receipt-vs-invoice/).
 
 4. Save and click **Pull now** for a first import.
 
@@ -68,4 +68,4 @@ If you also want to see orders placed in OpenCart in Lynk:
 
 **No orders come in from OpenCart**: check that **Enable order pull** is on and that the orders have one of the statuses in **Order statuses to import**.
 
-**OpenCart orders aren't sent to Softone**: orders placed directly in OpenCart are not sent to Softone. Skroutz and Shopflix orders that Lynk sends to OpenCart are sent as usual.
+**OpenCart orders aren't sent to Softone**: orders placed directly in OpenCart are not sent to Softone. Skroutz and Shopflix orders that Flows sends to OpenCart are sent as usual.

@@ -1,13 +1,13 @@
 ---
 title: "Shopflix"
-description: "Connect your Shopflix account and the portal session, so orders and the real commissions reach Lynk."
+description: "Connect your Shopflix account and the portal session, so orders and the real commissions reach Flows."
 sidebar:
   order: 3
 ---
 
 *Describes the current version of the app.*
 
-In this guide you connect your Shopflix account to Flows by Lynk. Orders arrive by webhook and are also synced automatically every 4 hours. With the **portal session**, Lynk also fetches the exact commission of every order, so profit is calculated correctly.
+In this guide you connect your Shopflix account to Flows by Lynk. Orders arrive by webhook and are also synced automatically every 4 hours. With the **portal session**, Flows also fetches the exact commission of every order, so profit is calculated correctly.
 
 ## Before you start
 
@@ -36,7 +36,7 @@ In this guide you connect your Shopflix account to Flows by Lynk. Orders arrive 
 
 ## Portal session for commissions
 
-Shopflix charges a commission of about 12% to 14% depending on the category. To use the exact amount of each order, Lynk reads commissions from the Shopflix billing portal using your browser session.
+Shopflix charges a commission of about 12% to 14% depending on the category. To use the exact amount of each order, Flows reads commissions from the Shopflix billing portal using your browser session.
 
 1. On the **Connection** tab, open **Advanced settings** and find the **Browser session** card.
 
@@ -46,10 +46,10 @@ Shopflix charges a commission of about 12% to 14% depending on the category. To 
 
 4. Select any request to merchants.shopflix.gr and, under **Request Headers**, copy the full value of **Cookie:**.
 
-5. In Lynk, click **Paste session cookie**, paste the value and click **Save**.
+5. In Flows, click **Paste session cookie**, paste the value and click **Save**.
 
 :::caution[The session gives access to your account]
-The cookie value gives access to your Shopflix account while the session is active. Paste it only into Lynk and never send it to anyone.
+The cookie value gives access to your Shopflix account while the session is active. Paste it only into Flows and never send it to anyone.
 :::
 
 The session expires after a few weeks. When it does, repeat steps 2 to 5.
@@ -67,7 +67,7 @@ If there are fewer commissions than orders, some haven't been posted in the Shop
 
 **"Session expired — commissions not syncing"** or **"No session — commissions not syncing"**: the session expired or was never set. Repeat the steps in "Portal session for commissions".
 
-**Some orders have wrong prices**: click **Repair prices**. Lynk re-fetches the orders with incorrect prices from Shopflix.
+**Some orders have wrong prices**: click **Repair prices**. Flows re-fetches the orders with incorrect prices from Shopflix.
 
 **An order is missing**: click **Sync now**. See also [Orders aren't arriving](/en/insights/troubleshooting/orders-not-arriving/).
 

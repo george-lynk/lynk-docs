@@ -1,13 +1,13 @@
 ---
 title: "Connecting Softone"
-description: "Connect Lynk to Softone, in the Demo environment first and then in Live."
+description: "Connect Flows to Softone, in the Demo environment first and then in Live."
 sidebar:
   order: 1
 ---
 
 *Describes the current version of the app.*
 
-In this guide you connect Lynk to Softone ERP. You start with the **Demo** environment (a test installation of Softone), so you can try your settings without touching your real data.
+In this guide you connect Flows to Softone ERP. You start with the **Demo** environment (a test installation of Softone), so you can try your settings without touching your real data.
 
 ## Before you start
 
@@ -30,14 +30,14 @@ In this guide you connect Lynk to Softone ERP. You start with the **Demo** envir
    - **Company**: the numeric ID of the company in Softone (for example 1002).
    - **Branch**: the branch or warehouse ID (for example 1000).
 
-5. Click **Connect Demo**. Lynk tests the connection before it saves the details.
+5. Click **Connect Demo**. Flows tests the connection before it saves the details.
 
 6. Under **Active environment**, click **Demo**. After the first connection the active environment stays **Live** and the card shows **Not connected** until you switch.
 
 7. Continue with [Channel settings](/en/insights/softone/channel-setup/) and test with a few orders.
 
 8. :::caution[Real documents in Softone]
-   Once the active environment is **Live**, every order that is sent creates an order document in your real Softone. If the active environment is already **Live**, the connection takes effect immediately. Lynk cannot delete a document; if something is sent by mistake, you correct it in Softone. First check each channel's series and customer codes for Live.
+   Once the active environment is **Live**, every order that is sent creates an order document in your real Softone. If the active environment is already **Live**, the connection takes effect immediately. Flows cannot delete a document; if something is sent by mistake, you correct it in Softone. First check each channel's series and customer codes for Live.
    :::
 
    When your tests succeed, select **Live**, fill in the details of your real installation and click **Connect Live**.
@@ -54,7 +54,7 @@ The **Softone Connection** card shows **Connected** and, in brackets, the active
 
 ## VAT numbers and company details (optional)
 
-On the same tab, the **GSIS Web Service Credentials** card fills in a new company's name, address and tax office (ΔΟΥ) from the AADE registry before Lynk creates the company in Softone. You need the AADE **special web service access codes**, not your Taxisnet sign-in. Fill in **Web service username**, **Web service password** and **Caller ΑΦΜ** (your store's own VAT number) and switch on **Enable automatic VAT enrichment**.
+On the same tab, the **GSIS Web Service Credentials** card fills in a new company's name, address and tax office (ΔΟΥ) from the AADE registry before Flows creates the company in Softone. You need the AADE **special web service access codes**, not your Taxisnet sign-in. Fill in **Web service username**, **Web service password** and **Caller ΑΦΜ** (your store's own VAT number) and switch on **Enable automatic VAT enrichment**.
 
 ## If something goes wrong
 

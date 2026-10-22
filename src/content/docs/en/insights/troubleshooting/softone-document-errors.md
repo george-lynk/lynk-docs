@@ -12,14 +12,14 @@ When an order isn't sent to Softone, it shows as **Push failed** in the **Order 
 After you've fixed the cause, send the order again:
 
 :::caution[Creates a document in Softone]
-**Retry** creates an order document in the active Softone environment. Lynk cannot delete it. First check the **Active environment** on the **Connection** tab.
+**Retry** creates an order document in the active Softone environment. Flows cannot delete it. First check the **Active environment** on the **Connection** tab.
 :::
 
 In the **Order Log**, click **Retry** on the order's row. See [Softone order log](/en/insights/softone/document-log/).
 
 ## "Cannot push order — SKU '…' not found in the connected Softone (…) environment"
 
-**Cause:** Lynk didn't find an item in Softone with the code (SKU) of the order's product. Either the item doesn't exist in Softone with the same code, or the item catalog hasn't synced since you added it.
+**Cause:** Flows didn't find an item in Softone with the code (SKU) of the order's product. Either the item doesn't exist in Softone with the same code, or the item catalog hasn't synced since you added it.
 
 **Fix:**
 

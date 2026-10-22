@@ -1,6 +1,6 @@
 ---
 title: "Orders aren't arriving"
-description: "What to check when a channel's new orders don't reach Lynk."
+description: "What to check when a channel's new orders don't reach Flows."
 sidebar:
   order: 2
 ---
@@ -27,7 +27,7 @@ If the problem remains, find your channel below.
 
 **Individual orders are missing**
 
-**Fix:** on the **Skroutz** page, click **Sync Recent**. Lynk fetches the recent orders from Skroutz that didn't arrive by webhook.
+**Fix:** on the **Skroutz** page, click **Sync Recent**. Flows fetches the recent orders from Skroutz that didn't arrive by webhook.
 
 ## Shopify
 
@@ -39,7 +39,7 @@ If the problem remains, find your channel below.
 
 **The webhooks exist but orders don't arrive**
 
-**Cause:** the **Webhook secret (optional)** doesn't match Shopify's signing key, so Lynk rejects the requests.
+**Cause:** the **Webhook secret (optional)** doesn't match Shopify's signing key, so Flows rejects the requests.
 
 **Fix:** copy the signing key from Shopify again, or leave the field empty, and click **Save**.
 
@@ -65,7 +65,7 @@ If the problem remains, find your channel below.
 
 ## An order's state didn't update
 
-**Fix:** on the **Orders** page, click **Sync states**. Lynk updates the states from the channel updates that have already arrived.
+**Fix:** on the **Orders** page, click **Sync states**. Flows updates the states from the channel updates that have already arrived.
 
 ## If the problem continues
 
