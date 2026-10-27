@@ -74,6 +74,8 @@ Choose the series for invoices. Three boxes follow it:
 
 - **The VAT number check at AADE**: the company's name, tax office and address come from the official registry, not from what the customer typed, and Lynk finds the business in Softone instead of creating a new one. If AADE doesn't answer, the order is sent **at once** with the customer's own details, marked "unverified", and we let you know by email and notification: "The VAT details weren't verified because of a connection problem with AADE". If you'd rather hold such orders, change it in the channel's rules.
 
+  The check needs your **AADE special credentials**: the username, the password and your company's VAT number. You add them right under the switch. The password is stored encrypted and never shown again. **Test the connection** shows that they work. Without credentials, or with the check off, invoices go out without a VAT number check, and we alert you.
+
 <a id="vat-prefix"></a>
 
 - **How your accountant wants the VAT number in Softone**: with the country prefix (`EL123456789`) or without it (`123456789`). Write it as in the customers you already have: that's how existing customers are found, reports add up and it matches AADE.
@@ -154,7 +156,7 @@ The last question of every channel: **All** (receipts and invoices), **Only thos
 
 ### When something hasn't been checked yet
 
-If a question says the Softone lists or a customer haven't been checked recently, select **Check now** next to the message. The customer is checked by its code, and meanwhile you see "checking". A customer you picked from the search is already checked; a code you typed is checked by Lynk as soon as you select **Next question**.
+If a question says the Softone lists or a customer haven't been checked recently, select **Check now** next to or under the message. The customer is checked by its code, and meanwhile you see "checking". A customer you picked from the search is already checked; a code you typed is checked by Lynk as soon as you select **Next question**.
 
 <a id="copy-rules"></a>
 
@@ -166,11 +168,16 @@ The copy happens once. After that, each channel has its own rules, and a change 
 
 <a id="registries"></a>
 
-## AADE VAT check and VIES (optional)
+## The AADE and VIES checks in the Test step
 
-The **AADE VAT check** and **VIES check** steps are used in the tests: with your AADE registry credentials, the test orders with an invoice show the company's details, and with your EU VAT number the intra-community scenario shows the VIES answer.
+They aren't separate steps of the guide. Your AADE special credentials go in the rules, in the question [What happens when the customer asks for an invoice](#aade). You turn VIES on in **Connections**, with your EU VAT number.
 
-If you've already set them up, the guide doesn't ask again: it shows what is set up (for AADE the VAT number, the username and the last test; for VIES your EU VAT number) with a **Change** button, and the steps show as done. If the AADE credentials are saved but the check is off, select **Turn the check on**.
+In the **Test** step, the automatic check (step 1) shows each one that is on:
+
+- **VAT number check at AADE**: whether the connection to AADE works and when it was checked. The connection test runs with the check, and again with **Check again**. Without credentials, or with the check off, it says invoices go out without a VAT number check and we alert you, and takes you to the rules to add them.
+- **VIES check**: whether it is on and has your EU VAT number. If the number is missing, it takes you to Connections.
+
+Neither one stops the Test or Live.
 
 ## Preview
 
