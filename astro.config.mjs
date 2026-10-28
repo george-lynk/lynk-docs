@@ -18,9 +18,27 @@ const section = (el, en, directory) => ({
 	items: [{ autogenerate: { directory } }],
 });
 
+/**
+ * Lets a heading fix its own anchor: `## Τιμή στόχου {#target}`. The app's help links point at
+ * these ids, so the Greek and the English page share them and a reworded heading keeps its links.
+ * Headings without one keep the generated slug. Fails the build if the Markdown processor
+ * changes and the option no longer applies.
+ */
+const headingIds = {
+	name: 'lynk-heading-ids',
+	hooks: {
+		'astro:config:setup': ({ config }) => {
+			const features = config.markdown.processor?.options?.features;
+			if (!features) throw new Error('lynk-heading-ids: the Markdown processor has no features to set');
+			features.headingAttributes = true;
+		},
+	},
+};
+
 export default defineConfig({
 	site: 'https://docs.lynk.gr',
 	integrations: [
+		headingIds,
 		starlight({
 			title: { el: 'Τεκμηρίωση Lynk', en: 'Lynk docs' },
 			description: 'Οδηγοί και απαντήσεις για τις εφαρμογές της Lynk.',
@@ -67,6 +85,7 @@ export default defineConfig({
 								section('Κανάλια', 'Channels', 'insights/channels'),
 								section('Softone ERP', 'Softone ERP', 'insights/softone'),
 								section('Κέρδη & κόστη', 'Profit & costs', 'insights/profit-costs'),
+								section('Προϊόντα', 'Products', 'insights/products'),
 								section('Παραγγελίες', 'Orders', 'insights/orders'),
 								section('Αυτοματισμοί', 'Automations', 'insights/automations'),
 								section('Ομάδα & λογαριασμός', 'Team & account', 'insights/team'),
