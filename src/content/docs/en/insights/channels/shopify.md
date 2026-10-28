@@ -84,6 +84,15 @@ To see in Lynk the orders placed before you connected, open the **Pull Historic 
 
 Older orders are not sent to Softone automatically. Note, however, that the **Push all unpushed** button in the Softone **Order Log** includes them. See [Softone order log](/en/insights/softone/document-log/).
 
+## VAT per product
+
+In the new version, Lynk sends each line's VAT to Softone as Shopify charged it (24%, 13%, 6% or 0%), not 24% on every line. Before you send orders:
+
+- Check that Shopify charges the right rate on every product. Products at 13% and 6% need a tax override on their collection, under **Settings → Taxes and duties**.
+- In the channel's rules, set a Softone VAT code for every rate you sell.
+
+An order whose VAT can't be sent as it was charged is held before it reaches Softone. See [A Shopify order was held for its VAT](/en/insights/troubleshooting/shopify-vat-holds/).
+
 ## What you'll see
 
 - The **Overview** tab shows the store as **Connected**.
