@@ -67,6 +67,8 @@ Or: "… isn't a whole percent", "… can't be read", "… has more taxes in Sho
 
 **Fix:** make the channel's shipping VAT rate in its rules the same as Shopify's, or correct the shipping tax in Shopify. Then send again.
 
+On an export (a customer outside the EU, with no tax in Shopify), shipping and cash on delivery carry no VAT. If you ship outside the EU, the shipping VAT rate and the cash-on-delivery rule's rate must be 0%, or the order is held for this reason.
+
 ### "Line … is at …% VAT in Shopify; its expense rule sends it at …%"
 
 **Cause:** a charge such as cash on delivery goes to Softone as an expense, at the rate of its expense rule. Shopify charged a different rate.
@@ -75,7 +77,9 @@ Or: "… isn't a whole percent", "… can't be read", "… has more taxes in Sho
 
 ### "No Softone VAT code for …%"
 
-**Cause:** the line has a rate for which you haven't set a Softone VAT code on the channel.
+Or, for several rates at once: "Softone VAT codes are missing for 13%, 6% …".
+
+**Cause:** the order has rates for which you haven't set a Softone VAT code on the channel. The message names all of them.
 
 **Fix:** in the channel's rules, under **VAT codes**, set the Softone code for every rate you sell through Shopify: 24%, 13%, 6% and 0%, plus 17%, 9% and 4% if you invoice businesses on the islands. Then send again.
 
@@ -84,6 +88,12 @@ Or: "… isn't a whole percent", "… can't be read", "… has more taxes in Sho
 **Cause:** the line has no tax in Shopify, and its item in Softone has no VAT category.
 
 **Fix:** set the item's VAT category in Softone, or the product's tax in Shopify. Then send again.
+
+### "The item's VAT category couldn't be read from Softone; we'll try again"
+
+**Cause:** the line has no tax in Shopify, and Softone didn't answer when Lynk asked for the item's VAT category. It doesn't mean the category is missing.
+
+**Fix:** usually nothing: Lynk tries again by itself. If the message stays, check that Softone is available and send the order again.
 
 ## Before you start with Shopify
 
