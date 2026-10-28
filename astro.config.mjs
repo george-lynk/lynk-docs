@@ -85,6 +85,7 @@ export default defineConfig({
 								section('Κανάλια', 'Channels', 'insights/channels'),
 								section('Softone ERP', 'Softone ERP', 'insights/softone'),
 								section('Κέρδη & κόστη', 'Profit & costs', 'insights/profit-costs'),
+								section('Προϊόντα', 'Products', 'insights/products'),
 								section('Παραγγελίες', 'Orders', 'insights/orders'),
 								section('Αυτοματισμοί', 'Automations', 'insights/automations'),
 								section('Ομάδα & λογαριασμός', 'Team & account', 'insights/team'),
