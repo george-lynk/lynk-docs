@@ -35,7 +35,7 @@ The codes stay saved, and the line under the form gives the likely cause:
 
 From the connection's menu, **Disconnect GSIS (AADE)**. Type `DISCONNECT` to confirm.
 
-- The stored codes are deleted, along with the AADE answers kept with them.
-- From then on, every VAT number check says "no AADE codes". Invoice orders are sent unchecked and you are alerted.
+- The stored codes are deleted. AADE answers already received stay valid until they expire.
+- From then on, a VAT number without a recent answer isn't checked: "no AADE codes". Invoice orders are sent unchecked and you are alerted.
 - What has already happened stays: orders, documents, history.
 - To reconnect, enter the codes again.
