@@ -90,8 +90,23 @@ Choose the series for invoices. Three boxes follow it:
 
 For each channel, you choose whether consumers become customers in Softone one by one, or all go to one retail customer:
 
-- **A new customer per buyer**: each buyer becomes a customer in Softone. Under **New consumer codes** you set a **Prefix** and a **Number of digits**: for example `30.01.` with 5 digits gives 30.01.00001. When sending, Lynk finds the highest code starting with the prefix in Softone and uses the next one.
+- **A new customer per buyer**: each buyer with an e-mail or phone becomes a Softone customer; we look for an existing one first. Without an e-mail or phone, the order goes to the default customer. Under **New consumer codes** you set a **Prefix** and a **Number of digits**: for example `30.01.` with 5 digits gives 30.01.00001. When sending, Lynk finds the highest code starting with the prefix in Softone and uses the next one.
 - **One shared retail customer**: every order goes to one customer that already exists in Softone (for example "ΠΕΛΑΤΗΣ ΛΙΑΝΙΚΗΣ"). The guide looks for it and suggests it; you can search by name or type the code.
+
+<a id="who-gets-a-customer"></a>
+
+**Who becomes a customer.** An individual is found or created only by their e-mail or phone, never by name or address. The e-mail counts first. A phone needs at least 8 digits. Addresses a channel makes up (for example a Skroutz order relayed to Shopify) don't count. Before a new customer is created, Lynk always looks for an existing one, by e-mail and then by phone.
+
+| Channel | Individuals |
+|---|---|
+| Skroutz | Always the default customer |
+| Shopflix | By e-mail, else by phone |
+| Shopify | By e-mail, else by phone |
+| OpenCart | By e-mail, else by phone |
+
+<a id="skroutz-individuals"></a>
+
+**Skroutz individuals.** Skroutz doesn't share individuals' e-mail or phone, so there is no safe way to recognise a returning buyer. Their orders always go to the default customer, even if a phone appears. This is expected, so we don't flag it. Skroutz businesses are found by their VAT number as usual.
 
 <a id="greece-abroad"></a>
 
@@ -99,7 +114,7 @@ For each channel, you choose whether consumers become customers in Softone one b
 
 <a id="default-customer"></a>
 
-**Default customer (and fallback).** With "A new customer per buyer", each segment's retail customer is also the fallback: if Softone doesn't accept the new customer, or the search for an existing one fails, the order goes to it instead of stopping. If Softone just isn't answering for a while, Lynk retries first as usual, and uses the default customer only once the retries run out. You see it under **Needs you** ("went to the walk-in customer"), with the orders and the reason. Once you've fixed the cause, send them again: Lynk tries the buyer again and, if that works, updates the same document with the right customer. If you don't set a default customer, such an order isn't sent, and the guide points this out.
+**Default customer (and fallback).** With "A new customer per buyer", each segment's retail customer is also the fallback: if the buyer has no e-mail or phone, the search for an existing one can't finish, or Softone doesn't accept the new customer, the order goes to it instead of stopping. If Softone just isn't answering for a while, Lynk retries first as usual, and uses the default customer only once the retries run out. You see it under **Needs you** ("went to the walk-in customer"), with the orders, the codes and the reason, except for Skroutz individuals. Once you've fixed the cause, send them again: Lynk tries the buyer again and, if that works, updates the same document with the right customer. If you don't set a default customer, such an order isn't sent, and the guide points this out.
 
 <a id="duplicate-check"></a>
 
